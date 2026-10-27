@@ -1,0 +1,785 @@
+name;elevation_m;prominence_m;lat;lon;massif;sources
+Bürglen (Albis);915;375;47.2578;8.5372;Albis;ISO
+Uetliberg;870;143;47.3494;8.4914;Albis;WP
+Piz Kesch;3418;1503;46.6214;9.8728;Albula Alps;GR+ISO
+Piz Calderas;3397;1085;46.5364;9.6961;Albula Alps;GR+ISO
+Piz Lagrev;3165;855;46.4458;9.7228;Albula Alps;GR
+Piz Vadret (Davos);3229;660;46.6869;9.9628;Albula Alps;GR
+Piz Ot;3246;631;46.5433;9.8103;Albula Alps;GR
+Flüela Schwarzhorn;3146;609;46.7358;9.9417;Albula Alps;GR
+Piz Ela;3339;515;46.6019;9.7075;Albula Alps;GR
+Piz Julier;3380;489;46.4911;9.7597;Albula Alps;GR
+Crasta Mora;2952;486;46.5714;9.8681;Albula Alps;GR
+Tinzenhorn;3173;474;46.6117;9.6711;Albula Alps;GR
+Chüealphorn;3078;472;46.6853;9.9053;Albula Alps;GR
+Piz Forun;3052;458;46.6553;9.8650;Albula Alps;GR
+Piz Mitgel;3159;445;46.6142;9.6467;Albula Alps;GR
+Älplihorn;3006;426;46.7108;9.8258;Albula Alps;GR
+Piz Üertsch;3267;396;46.5964;9.8364;Albula Alps;GR
+Hoch Ducan;3063;324;46.6894;9.8514;Albula Alps;GR
+Piz Bever;3230;283;46.5222;9.7594;Albula Alps;GR
+Piz Picuogl;3333;239;46.5242;9.7081;Albula Alps;GR
+Piz Blaisun;3200;235;46.6031;9.8628;Albula Alps;GR
+Piz Polaschin;3013;215;46.4608;9.7528;Albula Alps;GR
+Piz Surgonda;3196;210;46.5100;9.7250;Albula Alps;GR
+Piz Nair (St. Moritz);3057;184;46.5064;9.7875;Albula Alps;GR
+Piz Sarsura;3178;164;46.6917;9.9947;Albula Alps;GR
+Piz d'Err;3378;153;46.5453;9.6917;Albula Alps;GR
+Säntis;2502;2015;47.2494;9.3433;Appenzell Alps;AI+ISO+SG
+Gamsberg;2385;1358;47.1353;9.3744;Appenzell Alps;A2K+ISO+SG
+Tweralpspitz;1332;542;47.2908;9.0261;Appenzell Alps;SG
+Speer;1951;535;47.1856;9.1228;Appenzell Alps;SG
+Hinterrugg;2306;470;47.1536;9.3047;Appenzell Alps;A2K+SG
+Hundwiler Höhi;1306;406;47.3408;9.3333;Appenzell Alps;AI+AR
+Gäbris;1251;367;47.3817;9.4678;Appenzell Alps;AR
+Mattstock;1936;358;47.1697;9.1358;Appenzell Alps;SG
+Bachtel;1115;358;47.2947;8.8864;Appenzell Alps;WP
+Kronberg;1663;351;47.2914;9.3294;Appenzell Alps;AI
+Brisi;2279;325;47.1533;9.2767;Appenzell Alps;A2K+SG
+Höchhand;1314;311;47.2978;8.9781;Appenzell Alps;SG
+Wilkethöchi;1172;310;47.3383;9.1750;Appenzell Alps;SG
+Furgglenfirst;1951;302;47.2567;9.4403;Appenzell Alps;AI+SG
+Stockberg;1782;302;47.2289;9.2428;Appenzell Alps;SG
+Altmann;2435;282;47.2394;9.3717;Appenzell Alps;A2K+AI+SG
+Hochalp;1530;260;47.2753;9.2539;Appenzell Alps;AR
+Hoher Kasten;1791;251;47.2836;9.4854;Appenzell Alps;AI+SG
+Alvier;2343;243;47.1098;9.4148;Appenzell Alps;SG
+Zuestoll;2235;225;47.1544;9.2858;Appenzell Alps;SG
+Frümsel;2267;222;47.1525;9.2656;Appenzell Alps;SG
+Fulfirst;2384;219;47.1299;9.3967;Appenzell Alps;SG
+Marwees;2056;200;47.2613;9.4040;Appenzell Alps;AI
+Federispitz;1865;194;47.1665;9.0897;Appenzell Alps;SG
+Schibenstoll;2236;191;47.1550;9.2953;Appenzell Alps;SG
+Gauschla;2310;180;47.1019;9.4225;Appenzell Alps;SG
+Gonzen;1830;162;47.0675;9.4339;Appenzell Alps;SG
+Hundstein;2157;162;47.2528;9.4019;Appenzell Alps;AI
+Selun;2205;158;47.1528;9.2556;Appenzell Alps;SG
+Schnebelhorn;1292;112;47.3256;8.9796;Appenzell Alps;WP
+Finsteraarhorn;4274;2279;46.5372;8.1261;Bernese Alps;BE+ISO+VS
+Aletschhorn;4194;1043;46.4650;7.9939;Bernese Alps;ISO+VS
+Balmhorn;3697;1020;46.4250;7.6936;Bernese Alps;BE+ISO+VS
+Wildhorn;3250;981;46.3558;7.3622;Bernese Alps;BE+ISO+VS
+Schwarzhorn (Grindelwald);2928;966;46.6861;8.0756;Bernese Alps;BE
+Blüemlisalp;3660;874;46.4889;7.7725;Bernese Alps;BE
+Albristhorn;2763;823;46.4981;7.4878;Bernese Alps;BE
+Wildstrubel;3244;816;46.4003;7.5286;Bernese Alps;BE+VS
+Bietschhorn;3934;807;46.3917;7.8508;Bernese Alps;ISO+VS
+Schreckhorn;4078;795;46.5900;8.1181;Bernese Alps;BE
+Schafberg;2239;735;46.6369;7.3169;Bernese Alps;A2K+BE+ISO
+Jungfrau;4158;694;46.5367;7.9625;Bernese Alps;BE+VS
+Nesthorn;3820;658;46.4133;7.9261;Bernese Alps;VS
+Doldenhorn;3638;655;46.4689;7.7347;Bernese Alps;BE
+Gross Wannenhorn;3906;636;46.4939;8.0969;Bernese Alps;VS
+Gspaltenhorn;3436;600;46.5117;7.8275;Bernese Alps;BE
+Mönch;4110;591;46.5583;7.9972;Bernese Alps;BE+VS
+Wetterhörner (Mittelhorn);3702;578;46.6353;8.1247;Bernese Alps;BE
+Eggishorn;2927;563;46.4314;8.0942;Bernese Alps;VS
+Gross Lohner;3048;560;46.4619;7.6000;Bernese Alps;BE
+Giferspitz;2542;556;46.4511;7.3533;Bernese Alps;BE
+Dreispitz;2520;523;46.5928;7.7597;Bernese Alps;BE
+Breithorn (Lauterbrunnen);3780;464;46.4786;7.8767;Bernese Alps;BE+VS
+Tschuggen;2521;460;46.6003;7.9497;Bernese Alps;BE
+Spillgerte;2476;453;46.5367;7.4467;Bernese Alps;A2K+BE
+Schinhorn;3796;422;46.4517;7.9467;Bernese Alps;VS
+Hundsrügg;2047;414;46.5567;7.3053;Bernese Alps;BE
+Rinderhorn;3449;414;46.4136;7.6542;Bernese Alps;VS
+Niesen;2362;407;46.6461;7.6525;Bernese Alps;A2K+BE
+Bäderhorn;2009;404;46.6133;7.3275;Bernese Alps;BE
+Stockhorn;2190;399;46.6939;7.5375;Bernese Alps;A2K+BE
+Gross Fiescherhorn;4049;396;46.5514;8.0614;Bernese Alps;BE+VS
+Tschingelhorn;3555;389;46.4786;7.8486;Bernese Alps;BE+VS
+Ochsen;2188;384;46.6989;7.4186;Bernese Alps;A2K+BE
+Männliflue;2652;374;46.5514;7.5464;Bernese Alps;BE
+Gsür;2708;372;46.5108;7.5197;Bernese Alps;BE
+Hohniesen;2454;371;46.5772;7.5833;Bernese Alps;A2K+BE
+Rinderberg;2079;371;46.5053;7.3569;Bernese Alps;BE
+Wistätthorn;2362;370;46.4542;7.3864;Bernese Alps;A2K+BE
+Morgenberghorn;2249;370;46.6222;7.7936;Bernese Alps;A2K+BE
+Gstellihorn;2855;366;46.6622;8.1747;Bernese Alps;BE
+Eiger;3967;361;46.5775;8.0053;Bernese Alps;BE
+Schilthorn;2970;358;46.5575;7.8347;Bernese Alps;BE
+Gletscherhorn;3982;355;46.5128;7.9678;Bernese Alps;BE+VS
+Hockenhorn;3293;350;46.4283;7.7442;Bernese Alps;BE+VS
+Turnen;2079;343;46.6278;7.4925;Bernese Alps;BE
+Reeti;2757;341;46.6650;8.0117;Bernese Alps;BE
+Drättehorn;2794;340;46.5822;7.8239;Bernese Alps;BE
+Ärmighorn;2742;332;46.5417;7.7136;Bernese Alps;BE
+Ritzlihorn;3277;322;46.6322;8.2589;Bernese Alps;BE
+Trugberg;3932;308;46.5467;8.0153;Bernese Alps;VS
+Geltenhorn;3062;305;46.3464;7.3344;Bernese Alps;BE+VS
+Gross Grünhorn;4043;303;46.5319;8.0778;Bernese Alps;VS
+Wasenhorn (Fiesch);3447;303;46.4981;8.1658;Bernese Alps;VS
+Elsighorn;2341;296;46.5347;7.6403;Bernese Alps;A2K+BE
+Oltschiburg;2234;291;46.7161;8.0792;Bernese Alps;BE
+Seehore;2281;290;46.5669;7.4614;Bernese Alps;BE
+Drunengalm;2408;286;46.6258;7.6192;Bernese Alps;BE
+Hundshorn;2929;284;46.5428;7.8064;Bernese Alps;BE
+Breithorn (Blatten);3785;282;46.4356;7.8939;Bernese Alps;VS
+Niesehorn;2776;281;46.3822;7.3739;Bernese Alps;BE
+Höhi Wispile;1939;280;46.4356;7.2931;Bernese Alps;BE
+Steghorn;3147;279;46.4167;7.5842;Bernese Alps;BE+VS
+La Fava;2612;279;46.3025;7.2800;Bernese Alps;VS
+Wiriehorn;2304;273;46.5803;7.5297;Bernese Alps;BE
+Ferdenrothorn;3180;268;46.4089;7.7078;Bernese Alps;VS
+Schibe;2151;267;46.6725;7.3928;Bernese Alps;BE
+Alpjuhorn;3144;263;46.3672;7.9086;Bernese Alps;VS
+Oberaarhorn;3631;260;46.5314;8.1744;Bernese Alps;BE+VS
+Six des Eaux Froides;2905;257;46.3469;7.4033;Bernese Alps;VS
+Le Sérac;2817;257;46.3264;7.3294;Bernese Alps;VS
+Hangendgletscherhorn;3294;253;46.6294;8.1825;Bernese Alps;BE
+Mont Bonvin;2995;242;46.3644;7.5078;Bernese Alps;VS
+Wellhorn;3191;240;46.6558;8.1419;Bernese Alps;BE
+Wilerhorn;3307;238;46.3786;7.8106;Bernese Alps;VS
+Majinghorn;3053;231;46.3911;7.6892;Bernese Alps;VS
+Studerhorn;3632;230;46.5328;8.1478;Bernese Alps;BE+VS
+Niderhorn;2078;227;46.5919;7.4297;Bernese Alps;BE
+Cheibehore;2462;226;46.5619;7.5433;Bernese Alps;BE
+Bärglistock;3655;223;46.6156;8.1408;Bernese Alps;BE
+Dündenhorn;2862;222;46.5203;7.7297;Bernese Alps;BE
+Widdersgrind;2104;220;46.6775;7.4069;Bernese Alps;BE
+Loicherspitza;2843;217;46.3733;7.7050;Bernese Alps;VS
+Gantrisch;2175;216;46.7053;7.4506;Bernese Alps;BE
+Strahlhorn (Lötschental);3201;213;46.3861;7.8417;Bernese Alps;VS
+Tubang;2826;212;46.3586;7.4958;Bernese Alps;VS
+Wetterhorn;3690;211;46.6389;8.1156;Bernese Alps;BE
+Rohrbachstein;2950;209;46.3764;7.4622;Bernese Alps;BE+VS
+Spitzhorn;2807;209;46.3750;7.3106;Bernese Alps;BE+VS
+Hienderstock;3307;208;46.5856;8.2161;Bernese Alps;BE
+Wätterlatte;2007;208;46.6078;7.7436;Bernese Alps;BE
+Gärsthorn;2964;208;46.3469;7.9167;Bernese Alps;VS
+Chlyne Lohner;2587;202;46.4867;7.6258;Bernese Alps;BE
+Galmihorn;3507;202;46.5067;8.1847;Bernese Alps;VS
+Ebnefluh;3961;201;46.5081;7.9531;Bernese Alps;BE+VS
+Agassizhorn;3947;200;46.5467;8.1144;Bernese Alps;BE+VS
+Muntiggalm;2077;200;46.5733;7.4411;Bernese Alps;BE
+Fründenhorn;3368;198;46.4769;7.7575;Bernese Alps;BE
+Mittaghorn;3893;197;46.4983;7.9297;Bernese Alps;BE+VS
+Nünenenflue;2102;197;46.7064;7.4614;Bernese Alps;BE
+Iffighore;2378;195;46.3933;7.4025;Bernese Alps;BE
+Finsteraarrothorn;3530;195;46.5178;8.1478;Bernese Alps;VS
+Grosshorn;3754;194;46.4867;7.9108;Bernese Alps;BE+VS
+Rotstock;2632;194;46.4425;7.5372;Bernese Alps;BE
+Rosenhorn;3689;193;46.6319;8.1372;Bernese Alps;BE
+Lobhörner;2566;193;46.6022;7.8433;Bernese Alps;BE
+Dreieckhorn;3811;192;46.4781;8.0200;Bernese Alps;VS
+Faldumrothorn;2832;192;46.3658;7.7072;Bernese Alps;VS
+Rothore (Lauenen);2276;191;46.3997;7.3733;Bernese Alps;BE
+Tschingelspitz;3315;190;46.5111;7.8397;Bernese Alps;BE
+Bächlistock;3247;187;46.5864;8.2397;Bernese Alps;BE
+Sanetschhorn;2924;187;46.3383;7.2628;Bernese Alps;BE+VS
+Wildgärst;2891;187;46.6925;8.0744;Bernese Alps;BE
+Rothorn (Diemtigtal);2410;186;46.5353;7.4611;Bernese Alps;BE
+Dent de Ruth;2236;186;46.5539;7.2372;Bernese Alps;BE
+Oberaarrothorn;3477;184;46.5203;8.1808;Bernese Alps;BE+VS
+Sex Rouge;2893;184;46.3331;7.3764;Bernese Alps;VS
+Felsenhorn;2782;182;46.4286;7.6103;Bernese Alps;BE+VS
+Tellispitza;3081;182;46.4514;7.8169;Bernese Alps;VS
+Schnidehorn;2937;181;46.3731;7.3928;Bernese Alps;BE+VS
+Les Faverges;2971;177;46.3753;7.5289;Bernese Alps;BE+VS
+Bütlasse;3194;175;46.5186;7.8200;Bernese Alps;BE
+Roteflue;2296;171;46.6814;7.9578;Bernese Alps;BE
+Nasse Strahlegg;3485;170;46.5542;8.1317;Bernese Alps;BE
+Brünberg;2982;170;46.5767;8.2811;Bernese Alps;BE
+Gallauistock;2869;168;46.6519;8.2347;Bernese Alps;BE
+Löffelhorn;3096;167;46.5267;8.2369;Bernese Alps;BE+VS
+Gumihorn;2100;167;46.6553;7.9081;Bernese Alps;BE
+Lasenberg;2019;167;46.6903;7.5583;Bernese Alps;BE
+Niwen;2769;167;46.3611;7.7128;Bernese Alps;VS
+Riederhorn;2230;165;46.3714;8.0161;Bernese Alps;VS
+Mutthorn;3037;160;46.4830;7.8170;Bernese Alps;BE
+Geisshorn;3740;158;46.4411;8.0058;Bernese Alps;VS
+Tennbachhorn;3012;158;46.4353;7.7867;Bernese Alps;VS
+Trubelstock;2998;158;46.3703;7.5719;Bernese Alps;VS
+Grossstrubel;3243;157;46.4128;7.5625;Bernese Alps;BE+VS
+Furggenspitz;2297;157;46.4225;7.2300;Bernese Alps;BE
+Schilthorn (Lötschental);3122;157;46.3606;7.9119;Bernese Alps;VS
+Wildi Frau;3274;155;46.5000;7.7830;Bernese Alps;BE
+Mittlere Lohner;3001;154;46.4694;7.6094;Bernese Alps;BE
+Schwidenegg;2007;154;46.6867;7.4606;Bernese Alps;BE
+Tschipparällehore;2398;153;46.6042;7.6050;Bernese Alps;BE
+Seeberghorn;2071;153;46.3728;7.2197;Bernese Alps;BE
+Drümännler;2436;152;46.5311;7.5386;Bernese Alps;BE
+Fiescher Gabelhorn;3876;152;46.5022;8.0842;Bernese Alps;VS
+Schnierenhörnli;2069;151;46.7644;7.9317;Bernese Alps;BE
+Gummhorn;2040;151;46.7586;7.9553;Bernese Alps;BE
+Bettmergrat;2872;150;46.4181;8.0825;Bernese Alps;VS
+Piz Bernina;4048;2236;46.3822;9.9081;Bernina Range;GR+ISO
+Piz Surlej;3188;433;46.4533;9.8431;Bernina Range;GR
+Piz Fora;3363;432;46.3408;9.7847;Bernina Range;GR
+Piz Roseg;3935;417;46.3736;9.8831;Bernina Range;GR
+Piz Zupò;3995;414;46.3683;9.9314;Bernina Range;GR
+Piz Corvatsch;3451;383;46.4083;9.8161;Bernina Range;GR
+Piz Tremoggia;3441;349;46.3519;9.8219;Bernina Range;GR
+Piz Glüschaint;3594;341;46.3625;9.8400;Bernina Range;GR
+Piz Morteratsch;3751;324;46.4028;9.9017;Bernina Range;GR
+Piz Combul;2901;313;46.2297;10.0439;Bernina Range;GR
+Cima di Rosso;3366;266;46.3064;9.7183;Bernina Range;GR
+Munt Pers;3207;242;46.4214;9.9536;Bernina Range;GR
+Piz Palü;3899;223;46.3783;9.9606;Bernina Range;GR
+Piz Varuna;3453;222;46.3522;9.9931;Bernina Range;GR
+Piz Tschierva;3546;210;46.4142;9.8861;Bernina Range;GR
+Piz Fedoz;3190;207;46.3597;9.7406;Bernina Range;GR
+Crast' Agüzza;3870;179;46.3806;9.9069;Bernina Range;GR
+Il Chapütschin;3386;165;46.3747;9.8192;Bernina Range;GR
+Piz Cambrena;3606;158;46.3878;9.9811;Bernina Range;GR
+Pizzo Cengalo;3369;620;46.2950;9.6019;Bregaglia Range;GR
+Monte del Forno;3214;446;46.3383;9.7247;Bregaglia Range;GR
+Cima di Castello;3379;388;46.3031;9.6769;Bregaglia Range;GR
+Piz Bacun;3244;306;46.3422;9.6822;Bregaglia Range;GR
+Piz Badile;3308;262;46.2947;9.5861;Bregaglia Range;GR
+Cima della Bondasca;3289;187;46.2878;9.6217;Bregaglia Range;GR
+Dents du Midi;3257;1796;46.1611;6.9233;Chablais Alps;ISO+VS
+Cornettes de Bise;2432;1063;46.3325;6.7844;Chablais Alps;A2K+ISO+VS
+Le Grammont;2172;1063;46.3575;6.8211;Chablais Alps;VS
+Tour Sallière;3220;726;46.1269;6.9247;Chablais Alps;VS
+Les Jumelles;2215;365;46.3522;6.8136;Chablais Alps;A2K+VS
+Dent de Barme;2759;364;46.1319;6.8419;Chablais Alps;VS
+Pointe de Bellevue;2042;355;46.2575;6.8875;Chablais Alps;VS
+Le Luisin;2786;324;46.1208;6.9700;Chablais Alps;VS
+Le Linleu;2093;279;46.3158;6.8172;Chablais Alps;VS
+Dent du Salantin;2482;270;46.1514;6.9958;Chablais Alps;VS
+Tour de Don;1998;263;46.2894;6.8622;Chablais Alps;VS
+Pointe de Chésery;2249;254;46.2036;6.8033;Chablais Alps;VS
+Rochers de Gagnerie;2735;251;46.1625;6.9639;Chablais Alps;VS
+Le Tâche;1691;251;46.3444;6.8481;Chablais Alps;VS
+Mont Ruan;3057;227;46.1242;6.9028;Chablais Alps;VS
+Fontanabran;2703;222;46.0997;6.9383;Chablais Alps;VS
+Bec du Corbeau;1992;205;46.2542;6.8628;Chablais Alps;VS
+Pointe de l'Au;2152;202;46.2003;6.8411;Chablais Alps;VS
+Pointe de Mossette;2277;193;46.1908;6.8161;Chablais Alps;VS
+Pointe de la Finive;2838;189;46.0739;6.8919;Chablais Alps;VS
+Dent Jaune;3186;184;46.1661;6.9294;Chablais Alps;VS
+Les Perrons;2674;179;46.0553;6.9136;Chablais Alps;VS
+Tête du Géant;2232;172;46.2200;6.8164;Chablais Alps;VS
+Cime de l'Est;3178;169;46.1725;6.9472;Chablais Alps;VS
+Petits Perrons;2627;161;46.1281;6.9778;Chablais Alps;VS
+Croix de Culet;1963;155;46.1756;6.8456;Chablais Alps;VS
+Haut Sex;1961;155;46.3000;6.8347;Chablais Alps;VS
+La Braye;1788;155;46.3189;6.8400;Chablais Alps;VS
+Sex du Coeur;2019;154;46.3206;6.8069;Chablais Alps;VS
+Brienzer Rothorn;2350;1342;46.7869;8.0469;Emmental Alps;A2K+BE+OW
+Schrattenflue;2092;776;46.8344;7.9577;Emmental Alps;WP
+Hohgant;2197;638;46.7881;7.9019;Emmental Alps;A2K+BE
+Pilatus;2128;585;46.9739;8.2411;Emmental Alps;ISO+WP
+Napf;1408;552;47.0042;7.9400;Emmental Alps;BE+ISO
+Burgfeldstand;2063;508;46.7222;7.7947;Emmental Alps;BE
+Fürstein;2040;481;46.8956;8.0697;Emmental Alps;OW
+Wachthubel;1415;443;46.8472;7.8700;Emmental Alps;BE
+Blasenflue;1118;413;46.9322;7.6958;Emmental Alps;BE
+Sigriswiler Rothorn;2051;372;46.7306;7.7706;Emmental Alps;BE
+Schwändiblueme;1396;320;46.7469;7.7111;Emmental Alps;BE
+Bantiger;947;320;46.9781;7.5275;Emmental Alps;BE
+Honegg;1546;312;46.8036;7.8039;Emmental Alps;BE
+Augstmatthorn;2137;272;46.7422;7.9286;Emmental Alps;BE
+Stäfeliflue;1922;227;46.9647;8.1644;Emmental Alps;OW
+Tannhorn;2221;168;46.7747;7.9844;Emmental Alps;BE
+Mittaggüpfi;1917;167;46.9717;8.1875;Emmental Alps;OW
+Vanil Noir;2389;1120;46.5286;7.1483;Fribourg Prealps;A2K+ISO
+Dent de Savigny;2252;853;46.5497;7.2267;Fribourg Prealps;A2K
+Moléson;2002;509;46.5488;7.0171;Fribourg Prealps;WP
+Dent de Lys;2014;502;46.5076;7.0029;Fribourg Prealps;WP
+Le Gibloux;1204;374;46.6842;7.0406;Fribourg Prealps;WP
+La Berra;1719;307;46.6760;7.1840;Fribourg Prealps;WP
+Dent de Brenleire;2354;275;46.5508;7.1748;Fribourg Prealps;WP
+Dent de Folliéran;2340;226;46.5469;7.1683;Fribourg Prealps;WP
+Kaiseregg;2185;190;46.6524;7.3191;Fribourg Prealps;WP
+Tödi;3614;1570;46.8111;8.9147;Glarus Alps;GL+GR+ISO
+Haldensteiner Calanda;2805;1460;46.9000;9.4675;Glarus Alps;GR+SG
+Ringelspitz;3247;843;46.8983;9.3431;Glarus Alps;GR+ISO+SG
+Piz Giuv;3096;749;46.7019;8.6925;Glarus Alps;GR+UR
+Oberalpstock;3328;703;46.7428;8.7694;Glarus Alps;GR+ISO+UR
+Hausstock;3158;655;46.8744;9.0656;Glarus Alps;GL+GR
+Piz Segnas;3099;607;46.9078;9.2397;Glarus Alps;GL+GR
+Mürtschenstock;2441;601;47.0700;9.1447;Glarus Alps;A2K+GL
+Bristen;3073;567;46.7369;8.6811;Glarus Alps;UR
+Gross Windgällen;3187;552;46.8072;8.7322;Glarus Alps;UR
+Kärpf;2794;533;46.9167;9.0933;Glarus Alps;GL
+Gross Schärhorn;3294;513;46.8272;8.8292;Glarus Alps;UR
+Rienzenstock;2962;479;46.6831;8.6350;Glarus Alps;UR
+Pizol;2844;457;46.9592;9.3867;Glarus Alps;SG
+Cavistrau;3252;448;46.7844;8.9739;Glarus Alps;GR
+Gross Düssi;3256;429;46.7917;8.8275;Glarus Alps;GR+UR
+Gufelstock;2436;423;47.0250;9.1467;Glarus Alps;A2K+GL
+Clariden;3267;413;46.8419;8.8714;Glarus Alps;GL+UR
+Bündner Vorab;3028;408;46.8739;9.1567;Glarus Alps;GL+GR
+Gross Ruchen;3138;397;46.8103;8.7747;Glarus Alps;UR
+Foostock;2611;388;46.9567;9.2447;Glarus Alps;GL+SG
+Bifertenstock;3419;383;46.8044;8.9575;Glarus Alps;GL+GR
+Piz Cambrialas;3208;364;46.7894;8.8519;Glarus Alps;GR
+Magerrain;2524;357;47.0331;9.2200;Glarus Alps;GL+SG
+Wissgandstöckli;2488;357;46.9951;9.2499;Glarus Alps;GL+SG
+Fronalpstock (Glarus);2124;272;47.0687;9.1089;Glarus Alps;GL
+Laaxer Stöckli;2898;271;46.8831;9.2042;Glarus Alps;GL
+Hochmättli;2252;267;47.0525;9.1728;Glarus Alps;GL+SG
+Witenalpstock;3016;266;46.7361;8.7475;Glarus Alps;GR+UR
+Bützistock;2496;261;47.0289;9.1752;Glarus Alps;GL+SG
+Piz Dolf;3028;250;46.9033;9.2667;Glarus Alps;GR+SG
+Nüschenstock;2893;248;46.8683;9.0182;Glarus Alps;GL
+Gulderstock;2511;239;46.9933;9.2014;Glarus Alps;GL
+Sazmartinshorn;2827;239;46.9439;9.3758;Glarus Alps;SG
+Hochfinsler;2423;231;47.0340;9.3000;Glarus Alps;SG
+Blistock;2448;214;46.9314;9.1203;Glarus Alps;GL
+Chratzerengrat;2349;208;46.9714;8.9014;Glarus Alps;SZ
+Hangsackgrat;2634;196;46.9525;9.3218;Glarus Alps;SG
+Chammliberg;3220;194;46.8367;8.8450;Glarus Alps;UR
+Selbsanft;3029;180;46.8317;8.9783;Glarus Alps;GL
+Bocktschingel;3079;179;46.8492;8.8936;Glarus Alps;GL
+Ruchi;3107;170;46.8653;9.0453;Glarus Alps;GL
+Gandstock;2315;161;46.9292;9.1169;Glarus Alps;GL
+Mättlenstöck;2808;159;46.8876;9.0660;Glarus Alps;GL
+Montagne du Château;929;249;46.5808;6.7158;Jorat;ISO
+Chasseral;1607;667;47.1664;7.0594;Jura Mountains;BE+ISO
+Hasenmatt;1445;618;47.2419;7.4506;Jura Mountains;ISO
+Le Chasseron;1607;590;46.8517;6.5386;Jura Mountains;ISO+WP
+Mont Raimeux;1302;533;47.3083;7.4292;Jura Mountains;BE
+Mont Tendre;1679;451;46.5947;6.3100;Jura Mountains;ISO+WP
+Walenmattweid;1240;445;47.2842;7.4853;Jura Mountains;BE
+Le Suchet;1588;435;46.7724;6.4661;Jura Mountains;WP
+Lägern;866;425;47.4817;8.3947;Jura Mountains;ISO
+Moron;1337;393;47.2625;7.2636;Jura Mountains;BE
+Ruchen (Jura);1123;392;47.3622;7.8064;Jura Mountains;WP
+La Dôle;1677;355;46.4250;6.0994;Jura Mountains;ISO
+Dent de Vaulion;1483;339;46.6847;6.3500;Jura Mountains;WP
+Mont Racine;1439;319;47.0219;6.8161;Jura Mountains;ISO
+Vogelberg (Passwang);1204;301;47.3683;7.6822;Jura Mountains;WP
+Aiguilles de Baulmes;1559;280;46.7913;6.4722;Jura Mountains;WP
+Le Noirmont;1567;237;46.4842;6.1158;Jura Mountains;WP
+Weissenstein (Röti);1395;213;47.2519;7.5092;Jura Mountains;WP
+Le Soliat;1464;204;46.9286;6.7247;Jura Mountains;ISO
+Rheinwaldhorn;3402;1337;46.4936;9.0403;Lepontine Alps;GR+ISO+TI
+Gridone;2188;1218;46.1233;8.6481;Lepontine Alps;A2K+ISO+TI
+Pizzo Tambo;3279;1164;46.4969;9.2833;Lepontine Alps;GR+ISO
+Monte Leone;3553;1144;46.2497;8.1103;Lepontine Alps;ISO+VS
+Basòdino;3273;960;46.4117;8.4686;Lepontine Alps;ISO+TI
+Piz Medel;3211;952;46.6183;8.9111;Lepontine Alps;GR+ISO+TI
+Blinnenhorn;3374;945;46.4258;8.3081;Lepontine Alps;ISO+VS
+Piz Gannaretsch;3040;934;46.6119;8.7867;Lepontine Alps;GR
+Torent;2952;835;46.3436;9.0711;Lepontine Alps;GR+TI
+Scopi;3190;792;46.5717;8.8300;Lepontine Alps;GR+TI
+Pizzo Campo Tencia;3072;754;46.4297;8.7261;Lepontine Alps;ISO+TI
+Pizzo Rotondo;3192;752;46.5175;8.4661;Lepontine Alps;ISO+TI+VS
+Cima de Gagela;2805;723;46.3842;9.1747;Lepontine Alps;GR
+Scherbadung;3211;716;46.3242;8.2231;Lepontine Alps;VS
+Piz Corbet;3025;672;46.3797;9.2803;Lepontine Alps;GR
+Madom Gröss;2741;630;46.3667;8.8311;Lepontine Alps;TI
+Helsenhorn;3272;586;46.3047;8.1917;Lepontine Alps;VS
+Bruschghorn;3056;577;46.6311;9.3067;Lepontine Alps;GR+ISO
+Einshorn;2944;571;46.5161;9.2303;Lepontine Alps;GR
+Rosso di Ribia;2547;569;46.2611;8.5297;Lepontine Alps;TI
+Piz de la Lumbreida;2983;564;46.4811;9.2253;Lepontine Alps;GR
+Pizzo del Sole;2773;555;46.5250;8.7678;Lepontine Alps;TI
+Monte Zucchero;2735;554;46.3542;8.7142;Lepontine Alps;TI
+Piz Tomül;2946;534;46.6233;9.2283;Lepontine Alps;GR
+Badus;2928;529;46.6225;8.6636;Lepontine Alps;GR+UR
+Piz Pian Grand;2689;528;46.4175;9.1556;Lepontine Alps;GR
+Sosto;2221;524;46.5483;8.9519;Lepontine Alps;A2K+TI
+Piz Cavel;2946;518;46.6558;9.0197;Lepontine Alps;GR
+Grieshorn;2969;509;46.4514;8.3931;Lepontine Alps;TI
+Piz Fess;2880;501;46.7275;9.2886;Lepontine Alps;GR
+Pizzo Paglia;2593;498;46.2319;9.2192;Lepontine Alps;GR+ISO
+Monte Salmone;1560;484;46.2094;8.7072;Lepontine Alps;TI
+Corona di Redorta;2804;481;46.3756;8.7322;Lepontine Alps;TI
+Wasenhorn (Simplon);3246;476;46.2664;8.0856;Lepontine Alps;VS
+Pizzo Quadro;2793;470;46.2986;8.4181;Lepontine Alps;TI
+Piz Vial;3168;465;46.6319;8.9692;Lepontine Alps;GR
+Gross Schinhorn;2939;465;46.3611;8.2608;Lepontine Alps;VS
+Cima di Pinadee;2486;455;46.5133;8.9769;Lepontine Alps;A2K+TI
+Wandfluhhorn;2863;452;46.3447;8.4642;Lepontine Alps;TI
+Pizzo Centrale;2999;451;46.5781;8.6150;Lepontine Alps;TI+UR
+Bärenhorn;2929;449;46.5756;9.2319;Lepontine Alps;GR
+Piz della Forcola;2675;449;46.3164;9.2933;Lepontine Alps;GR
+Piz Miez;2956;445;46.6547;8.9167;Lepontine Alps;GR
+Pizzo Marumo;2790;435;46.5983;8.9594;Lepontine Alps;TI
+Piz de Groven;2694;433;46.3183;9.1592;Lepontine Alps;GR
+Bortelhorn;3194;430;46.2947;8.1253;Lepontine Alps;VS
+Alperschällihorn;3039;425;46.5867;9.3064;Lepontine Alps;GR
+Pizzo Massari;2760;424;46.4758;8.6833;Lepontine Alps;TI
+Cima di Gana Bianca;2842;410;46.4714;8.9922;Lepontine Alps;TI
+Güferhorn;3379;400;46.5125;9.0631;Lepontine Alps;GR
+Piz Beverin;2998;396;46.6525;9.3578;Lepontine Alps;GR
+Piz Aul;3121;395;46.6228;9.1250;Lepontine Alps;GR
+Piz Terri;3149;390;46.6000;9.0342;Lepontine Alps;GR+TI
+Bättlihorn;2951;388;46.3325;8.0939;Lepontine Alps;VS
+Pizzo Castello;2808;385;46.4156;8.5653;Lepontine Alps;TI
+Nufenenstock;2866;381;46.4669;8.3883;Lepontine Alps;TI+VS
+Pizzo Gallina;3061;378;46.4947;8.3919;Lepontine Alps;TI+VS
+Guggernüll;2886;377;46.5239;9.2714;Lepontine Alps;GR
+Schenadüi;2738;375;46.5525;8.7486;Lepontine Alps;TI
+Pizzas d'Anarosa;3002;366;46.5989;9.3158;Lepontine Alps;GR
+Pizzo di Claro;2727;361;46.2958;9.0556;Lepontine Alps;GR+TI
+Pizzo dell'Alpe Gelato;2613;357;46.2497;8.4442;Lepontine Alps;TI
+Piz Gren;2890;355;46.6775;9.0228;Lepontine Alps;GR
+Piz Cavradi;2614;351;46.6325;8.6956;Lepontine Alps;GR
+Pizzo Lucendro;2963;350;46.5389;8.5194;Lepontine Alps;TI+UR
+Cristallina;2912;344;46.4647;8.5369;Lepontine Alps;TI
+Schwarzberg;2764;343;46.6094;8.6778;Lepontine Alps;GR+UR
+Ofenhorn;3235;334;46.3867;8.3186;Lepontine Alps;VS
+Pizzo di Campel;2376;332;46.3319;9.2617;Lepontine Alps;A2K+GR
+Lüschgrat;2178;332;46.7017;9.3447;Lepontine Alps;A2K
+Il Madone;2768;330;46.4919;8.5669;Lepontine Alps;TI
+Pizzo Ruscada;2004;330;46.1775;8.5928;Lepontine Alps;TI
+Marchhorn;2962;327;46.4486;8.4625;Lepontine Alps;TI
+Poncione Piancascia;2360;325;46.2992;8.7336;Lepontine Alps;A2K+TI
+Hübschhorn;3192;325;46.2369;8.0553;Lepontine Alps;VS
+Pizzo del Ramulazz;2939;324;46.3967;9.0928;Lepontine Alps;GR+TI
+Chüebodenhorn;3070;316;46.5081;8.4531;Lepontine Alps;TI+VS
+Cima de Barna;2862;314;46.4206;9.2636;Lepontine Alps;GR
+Cima di Bri;2520;313;46.3053;8.8842;Lepontine Alps;TI
+Piz Blas;3019;312;46.5772;8.7281;Lepontine Alps;GR+TI
+Cima Bianca;2612;309;46.3878;8.8125;Lepontine Alps;TI
+Vogelberg;3218;303;46.4783;9.0653;Lepontine Alps;GR+TI
+Poncione di Braga;2864;301;46.4342;8.5428;Lepontine Alps;TI
+Pizzo Erra;2417;301;46.4411;8.8908;Lepontine Alps;A2K+TI
+Fanellhorn;3124;301;46.5478;9.1306;Lepontine Alps;GR
+Pizzo Cramalina;2322;297;46.2554;8.6239;Lepontine Alps;A2K+TI
+Gross Muttenhorn;3099;292;46.5467;8.4272;Lepontine Alps;UR+VS
+Piz Ravetsch;3007;292;46.5842;8.7031;Lepontine Alps;GR
+Pizzo Bombögn;2331;268;46.3044;8.4972;Lepontine Alps;TI
+Piz Rondadura;3016;266;46.5764;8.7506;Lepontine Alps;GR+TI
+Stockhorn (Binn);2610;258;46.3458;8.2142;Lepontine Alps;VS
+Hillehorn;3181;257;46.3031;8.1403;Lepontine Alps;VS
+Furggubäumhorn;2985;253;46.2797;8.1056;Lepontine Alps;VS
+Cima Rossa;3161;236;46.4439;9.0869;Lepontine Alps;GR+TI
+Poncione di Manió;2925;230;46.4967;8.4364;Lepontine Alps;VS
+Stotzig Muttenhorn;3062;229;46.5375;8.4436;Lepontine Alps;VS
+Turbhorn;3246;228;46.4081;8.2806;Lepontine Alps;VS
+Gross Leckihorn;3068;222;46.5358;8.4642;Lepontine Alps;VS
+Albrunhorn;2885;221;46.3636;8.2836;Lepontine Alps;VS
+Rothorn (Binn);2813;182;46.3117;8.1303;Lepontine Alps;VS
+Cima dei Cogn;3063;177;46.4322;9.0886;Lepontine Alps;GR+TI
+Vordere Helse;3106;167;46.3150;8.1819;Lepontine Alps;VS
+Höhberghorn;3005;166;46.5097;9.1031;Lepontine Alps;GR
+Pizzo Nero;2904;163;46.4925;8.4122;Lepontine Alps;VS
+Punta della Rossa;2887;162;46.3403;8.2486;Lepontine Alps;VS
+Oberblatthorn;2756;158;46.3147;8.1139;Lepontine Alps;VS
+Puntone dei Fraciòn;3202;157;46.4711;9.0853;Lepontine Alps;GR+TI
+Surettahorn;3027;156;46.5097;9.3625;Lepontine Alps;GR
+Grampielhorn;2764;154;46.3458;8.2628;Lepontine Alps;VS
+Piz Languard;3262;947;46.4883;9.9564;Livigno Alps;GR
+Piz Paradisin;3302;875;46.4261;10.1172;Livigno Alps;GR
+Piz Minor;3049;584;46.4511;10.0283;Livigno Alps;GR
+Piz Lagalb;2959;524;46.4317;10.0236;Livigno Alps;GR
+Piz Quattervals;3165;471;46.6272;10.0950;Livigno Alps;GR+ISO
+Scima da Saoseo;3264;440;46.3856;10.1581;Livigno Alps;GR
+Piz Sena;3075;344;46.3531;10.1100;Livigno Alps;GR
+Piz Albris;3166;318;46.4642;9.9633;Livigno Alps;GR
+Piz Prüna;3153;317;46.4872;9.9872;Livigno Alps;GR
+Piz la Stretta;3104;314;46.4767;10.0447;Livigno Alps;GR
+Piz di Sassiglion;2855;313;46.3228;10.1125;Livigno Alps;GR
+Piz da l'Acqua;3118;310;46.6111;10.1389;Livigno Alps;GR
+Piz Vadret (Pontresina);3199;308;46.5089;9.9508;Livigno Alps;GR
+Corn da Camp;3232;201;46.4178;10.1078;Livigno Alps;GR
+Monte Tamaro;1962;1408;46.1039;8.8661;Lugano Prealps;ISO+TI
+Monte Generoso;1701;1321;45.9314;9.0200;Lugano Prealps;ISO+TI
+Monte San Giorgio;1097;758;45.9136;8.9497;Lugano Prealps;TI
+Monte San Salvatore;912;602;45.9769;8.9472;Lugano Prealps;TI
+Poncione d'Arzo;1015;345;45.8922;8.9242;Lugano Prealps;TI
+Marmontana;2316;343;46.1719;9.1703;Lugano Prealps;A2K+GR
+Monte Boglia;1516;342;46.0297;9.0075;Lugano Prealps;TI
+Monte Gambarogno;1734;339;46.1122;8.8303;Lugano Prealps;TI
+Cima di Fojorina;1810;305;46.0628;9.0728;Lugano Prealps;TI
+Camoghè;2228;283;46.1350;9.0642;Lugano Prealps;TI
+Le Catogne;2598;1100;46.0542;7.1108;Mont Blanc massif;VS
+Mont de l'Arpille;2085;557;46.0772;7.0067;Mont Blanc massif;VS
+Aiguille d'Argentière;3898;473;45.9600;7.0200;Mont Blanc massif;VS
+Mont Dolent;3820;330;45.9225;7.0461;Mont Blanc massif;VS
+Tour Noir;3837;302;45.9489;7.0375;Mont Blanc massif;VS
+Grande Fourche;3610;275;45.9764;7.0211;Mont Blanc massif;VS
+Aiguille du Tour;3540;259;45.9944;7.0097;Mont Blanc massif;VS
+Aiguilles Dorées;3519;258;45.9825;7.0333;Mont Blanc massif;VS
+Le Génépi;2884;219;46.0247;7.0442;Mont Blanc massif;VS
+Pointe d'Orny;3271;183;46.0022;7.0428;Mont Blanc massif;VS
+Le Portalet;3344;177;45.9903;7.0564;Mont Blanc massif;VS
+Pointe Kurz;3676;174;45.9383;7.0356;Mont Blanc massif;VS
+Piz Platta;3392;1108;46.4872;9.5617;Oberhalbstein Alps;GR+ISO
+Piz Timun;3209;823;46.4669;9.4094;Oberhalbstein Alps;GR+ISO
+Piz Por;3028;733;46.5094;9.3842;Oberhalbstein Alps;GR
+Piz Forbesch;3262;601;46.5203;9.5592;Oberhalbstein Alps;GR
+Piz Grisch;3060;544;46.5311;9.4728;Oberhalbstein Alps;GR
+Piz Duan;3131;482;46.3753;9.5833;Oberhalbstein Alps;GR
+Piz Curvér;2972;456;46.6033;9.4972;Oberhalbstein Alps;GR
+Cima da Lägh;3083;422;46.3764;9.4611;Oberhalbstein Alps;GR
+Gletscherhorn (Avers);3107;413;46.3875;9.5606;Oberhalbstein Alps;GR
+Pizz Gallagiun;3107;413;46.3669;9.4878;Oberhalbstein Alps;GR
+Piz Toissa;2657;310;46.6186;9.5250;Oberhalbstein Alps;GR
+Piz Arblatsch;3203;235;46.5356;9.5769;Oberhalbstein Alps;GR
+Piz Daint;2968;734;46.6186;10.2908;Ortler Alps;GR
+Piz Murtaröl;3180;679;46.5706;10.2875;Ortler Alps;GR+ISO
+Piz Turettas;2963;400;46.5869;10.3347;Ortler Alps;GR
+Munt Buffalora;2630;351;46.6269;10.2500;Ortler Alps;GR
+Cima del Serraglio;2685;350;46.5928;10.2422;Ortler Alps;GR
+Piz Tea Fondada;3144;319;46.5494;10.3081;Ortler Alps;GR
+Piz Schumbraida;3125;315;46.5428;10.3383;Ortler Alps;GR
+Piz Costainas;3004;199;46.5628;10.4736;Ortler Alps;GR
+Monte Rosa (Dufourspitze);4634;2165;45.9369;7.8669;Pennine Alps;ISO+VS
+Grand Combin;4309;1512;45.9375;7.2992;Pennine Alps;ISO+VS
+Weisshorn;4505;1234;46.1017;7.7161;Pennine Alps;ISO+VS
+Weissmies;4013;1183;46.1278;8.0122;Pennine Alps;ISO+VS
+Dom;4546;1047;46.0950;7.8600;Pennine Alps;ISO+VS
+Matterhorn;4478;1043;45.9764;7.6586;Pennine Alps;ISO+VS
+Dent Blanche;4357;916;46.0342;7.6119;Pennine Alps;VS
+Ruinette;3875;851;45.9792;7.4003;Pennine Alps;VS
+Aiguilles Rouges d'Arolla;3644;789;46.0553;7.4336;Pennine Alps;VS
+Dent d'Hérens;4173;704;45.9700;7.6053;Pennine Alps;VS
+Rimpfischhorn;4199;647;46.0233;7.8842;Pennine Alps;VS
+Evêque;3716;647;45.9644;7.5028;Pennine Alps;VS
+Mont Vélan;3726;620;45.8917;7.2517;Pennine Alps;VS
+Mont Gelé (Bagnes);3518;619;45.9042;7.3661;Pennine Alps;VS
+Stellihorn;3436;598;46.0364;8.0008;Pennine Alps;VS
+Seehorn;2434;567;46.1825;8.1156;Pennine Alps;A2K+VS
+Ober Gabelhorn;4063;536;46.0386;7.6681;Pennine Alps;VS
+Lagginhorn;4010;512;46.1572;8.0031;Pennine Alps;VS
+Zinalrothorn;4221;491;46.0650;7.6903;Pennine Alps;VS
+Bouquetins;3838;490;45.9822;7.5453;Pennine Alps;VS
+Le Pleureur;3704;467;46.0164;7.3692;Pennine Alps;VS
+La Singla;3714;452;45.9458;7.4719;Pennine Alps;VS
+Breithorn;4160;438;45.9411;7.7489;Pennine Alps;VS
+Grand Cornier;3962;431;46.0519;7.6114;Pennine Alps;VS
+Portjengrat;3654;411;46.1008;8.0347;Pennine Alps;VS
+Dent de Perroc;3676;408;46.0394;7.5231;Pennine Alps;VS
+Mont Fort;3329;408;46.0811;7.3186;Pennine Alps;VS
+Strahlhorn;4190;404;46.0133;7.9017;Pennine Alps;VS
+Sasseneire;3254;386;46.1386;7.5253;Pennine Alps;VS
+Lyskamm;4532;379;45.9222;7.8356;Pennine Alps;VS
+Les Diablons;3609;379;46.1425;7.6711;Pennine Alps;VS
+Egginer;3367;378;46.0753;7.9300;Pennine Alps;VS
+Mont Brulé;3578;365;45.9550;7.5383;Pennine Alps;VS
+Becs de Bosson;3149;362;46.1678;7.5181;Pennine Alps;VS
+Platthorn;3246;361;46.1664;7.8611;Pennine Alps;VS
+Alphubel;4206;359;46.0631;7.8639;Pennine Alps;VS
+Spechhorn;3189;355;46.0122;8.0011;Pennine Alps;VS
+Aouille Tseuque;3554;345;45.9303;7.4431;Pennine Alps;VS
+Sonnighorn;3487;340;46.0742;8.0222;Pennine Alps;VS
+Pizzo Straciugo;2713;335;46.1322;8.1208;Pennine Alps;VS
+Spitzhorli;2737;320;46.2644;7.9806;Pennine Alps;VS
+Grand Golliat;3238;313;45.8592;7.1017;Pennine Alps;VS
+Combin de Corbassière;3716;312;45.9781;7.2806;Pennine Alps;VS
+Schwarzhorn (Turtmann);3201;308;46.2167;7.7567;Pennine Alps;VS
+La Tsavre;2978;305;45.9156;7.1294;Pennine Alps;VS
+Brunegghorn;3831;304;46.1258;7.7458;Pennine Alps;VS
+Le Métailler;3213;302;46.1039;7.3603;Pennine Alps;VS
+Pointe de Zinal;3789;301;46.0269;7.6306;Pennine Alps;VS
+Fletschhorn;3985;300;46.1678;8.0031;Pennine Alps;VS
+Pierre Avoi;2473;300;46.1181;7.2003;Pennine Alps;A2K+VS
+Bec d'Epicoune;3531;298;45.9147;7.4225;Pennine Alps;VS
+Pic d'Artsinol;2998;296;46.1150;7.4269;Pennine Alps;VS
+Bec des Rosses;3223;283;46.0719;7.2989;Pennine Alps;VS
+Barrhorn;3610;267;46.1558;7.7342;Pennine Alps;VS
+Petit Mont Collon;3556;264;45.9678;7.4811;Pennine Alps;VS
+Oberrothorn;3414;259;46.0275;7.8128;Pennine Alps;VS
+Allalinhorn;4027;257;46.0461;7.8947;Pennine Alps;VS
+Pointe de Drône;2950;254;45.8789;7.1572;Pennine Alps;VS
+Aiguille de la Tsa;3668;251;46.0214;7.5222;Pennine Alps;VS
+Garde de Bordon;3310;249;46.1208;7.5972;Pennine Alps;VS
+Färichhorn;3292;248;46.1556;7.8589;Pennine Alps;VS
+La Serpentine;3789;247;45.9844;7.4333;Pennine Alps;VS
+Pollux;4089;243;45.9278;7.7853;Pennine Alps;VS
+Cima di Jazzi;3792;241;45.9811;7.8947;Pennine Alps;VS
+Mettelhorn;3406;240;46.0572;7.7425;Pennine Alps;VS
+Balfrin;3796;235;46.1350;7.8803;Pennine Alps;VS
+Bella Tola;3025;235;46.2314;7.6461;Pennine Alps;VS
+Illhorn;2717;235;46.2628;7.6161;Pennine Alps;VS
+Tête de Valpelline;3799;234;45.9753;7.5811;Pennine Alps;VS
+Mont Mort;2867;232;45.8636;7.1786;Pennine Alps;VS
+Cima del Rosso;2624;232;46.1150;8.1100;Pennine Alps;VS
+Rosablanche;3336;227;46.0600;7.3542;Pennine Alps;VS
+Schalihorn;3975;225;46.0844;7.7050;Pennine Alps;VS
+Pointe d'Otemma;3403;224;45.9436;7.3981;Pennine Alps;VS
+Grande Aiguille;3682;223;45.9503;7.2647;Pennine Alps;VS
+Mattwaldhorn;3246;223;46.1989;7.9544;Pennine Alps;VS
+Mont Gelé (Verbier);3023;219;46.0969;7.2792;Pennine Alps;VS
+Monts Telliers;2951;216;45.8989;7.1439;Pennine Alps;VS
+Becca de Sery;2863;214;46.0106;7.2806;Pennine Alps;VS
+Täschhorn;4491;213;46.0836;7.8572;Pennine Alps;VS
+Mont Collon;3637;208;45.9764;7.5047;Pennine Alps;VS
+Nadelhorn;4327;207;46.1089;7.8642;Pennine Alps;VS
+Pointe de Tourtemagne;3080;206;46.2044;7.6617;Pennine Alps;VS
+Mont Fourchon;2902;206;45.8686;7.1333;Pennine Alps;VS
+Pointe de Barasson;2963;205;45.8631;7.2008;Pennine Alps;VS
+La Crevasse;1808;202;46.0928;7.1367;Pennine Alps;VS
+Furgggrat;3492;197;45.9569;7.6814;Pennine Alps;VS
+Tête de Ferret;2714;192;45.8950;7.0764;Pennine Alps;VS
+Pointe de Bertol;3499;190;46.0097;7.5283;Pennine Alps;VS
+Joderhorn;3036;190;45.9961;7.9892;Pennine Alps;VS
+Ginalshorn;3027;187;46.2372;7.7406;Pennine Alps;VS
+Tochuhorn;2661;187;46.2564;8.0008;Pennine Alps;VS
+Bec Rond;2563;181;45.9583;7.1461;Pennine Alps;VS
+Distelhorn;2830;180;46.1861;7.8708;Pennine Alps;VS
+La Luette;3548;179;46.0103;7.3875;Pennine Alps;VS
+Magehorn;2621;179;46.2336;7.9803;Pennine Alps;VS
+Pointe de Boveire;3212;178;45.9944;7.2400;Pennine Alps;VS
+Wyssegga;3168;178;46.1989;7.7483;Pennine Alps;VS
+Galehorn;2797;176;46.2217;7.9831;Pennine Alps;VS
+Inners Stellihorn;3410;175;46.1669;7.7394;Pennine Alps;VS
+Mont Blanc de Cheilon;3870;174;45.9931;7.4172;Pennine Alps;VS
+Combin de Boveire;3663;173;45.9647;7.2708;Pennine Alps;VS
+Steitalhorn;3164;172;46.2039;7.7603;Pennine Alps;VS
+Couronne de Bréona;3159;172;46.0917;7.5706;Pennine Alps;VS
+Mont Durand;3713;169;46.0339;7.6506;Pennine Alps;VS
+Augstbordhorn;2971;168;46.2350;7.7953;Pennine Alps;VS
+Pointe du Tsaté;3078;162;46.1094;7.5489;Pennine Alps;VS
+Hirsihorn;3076;162;46.1869;7.6589;Pennine Alps;VS
+Gischihorn;3083;160;46.3161;8.2147;Pennine Alps;VS
+Tournelon Blanc;3700;159;45.9697;7.3222;Pennine Alps;VS
+Tête Blanche;3710;158;45.9875;7.5750;Pennine Alps;VS
+Mont Avril;3347;158;45.9153;7.3444;Pennine Alps;VS
+Castor;4225;156;45.9222;7.7928;Pennine Alps;VS
+Pigne d'Arolla;3787;154;45.9911;7.4550;Pennine Alps;VS
+Pointe de Vouasson;3490;154;46.0722;7.4253;Pennine Alps;VS
+Diablon;3053;154;46.1414;7.5469;Pennine Alps;VS
+Schijenhorn;2980;152;46.1286;8.0694;Pennine Alps;VS
+Riffelhorn;2928;152;45.9814;7.7583;Pennine Alps;VS
+Aroser Rothorn;2980;1349;46.7378;9.6139;Plessur Alps;GR+ISO
+Stätzerhorn;2575;1028;46.7558;9.5122;Plessur Alps;GR
+Weissfluh;2843;497;46.8353;9.7953;Plessur Alps;GR+ISO
+Hochwang;2534;417;46.8742;9.6331;Plessur Alps;GR
+Tiejer Flue;2781;345;46.7808;9.7344;Plessur Alps;GR
+Schesaplana;2965;828;47.0539;9.7075;Rätikon;GR+ISO
+Madrisahorn;2826;600;46.9311;9.8722;Rätikon;GR
+Chrüz;2196;589;46.9550;9.7750;Rätikon;A2K+GR
+Sulzfluh;2818;475;47.0125;9.8397;Rätikon;GR
+Fläscherberg;1135;422;47.0375;9.5064;Rätikon;GR
+Vilan;2376;416;47.0128;9.6031;Rätikon;A2K+GR
+Vorder Grauspitz;2599;353;47.0528;9.5811;Rätikon;GR
+Kirchlispitzen;2552;313;47.0389;9.7694;Rätikon;GR
+Muttler;3293;703;46.9006;10.3786;Samnaun Alps;GR+ISO
+Piz Tschütta;3254;406;46.9036;10.3431;Samnaun Alps;GR
+Piz Mundin;3146;342;46.9253;10.4308;Samnaun Alps;GR
+Flimspitz;2929;172;46.9822;10.3439;Samnaun Alps;GR
+Rigi;1798;1290;47.0567;8.4856;Schwyz Alps;ISO+SZ
+Glärnisch;2915;967;46.9986;8.9986;Schwyz Alps;GL+ISO
+Rossberg (Wildspitz);1580;780;47.0842;8.5778;Schwyz Alps;SZ
+Mutteristock;2295;745;47.0483;8.9431;Schwyz Alps;A2K+GL+SZ
+Druesberg;2282;709;47.0042;8.8336;Schwyz Alps;A2K
+Schächentaler Windgällen;2764;691;46.8881;8.7917;Schwyz Alps;UR
+Ortstock;2716;538;46.9253;8.9481;Schwyz Alps;GL+SZ
+Rigi Hochflue;1698;508;47.0100;8.5600;Schwyz Alps;SZ
+Grosser Mythen;1898;493;47.0297;8.6889;Schwyz Alps;SZ
+Chaiserstock;2515;470;46.9283;8.7286;Schwyz Alps;SZ+UR
+Rautispitz;2283;465;47.0711;9.0283;Schwyz Alps;A2K+GL
+Chöpfenberg;1896;465;47.1186;8.9686;Schwyz Alps;GL+SZ
+Chlingenstock;1935;448;46.9572;8.6747;Schwyz Alps;SZ
+Pfannenstock;2573;373;46.9617;8.9114;Schwyz Alps;SZ
+Kleiner Mythen;1811;373;47.0408;8.6842;Schwyz Alps;SZ
+Bös Fulen;2802;367;46.9672;8.9458;Schwyz Alps;GL+SZ
+Gross Aubrig;1695;327;47.1114;8.8825;Schwyz Alps;SZ
+Wasserbergfirst;2341;325;46.9394;8.7892;Schwyz Alps;A2K+SZ
+Morgartenberg;1244;312;47.0997;8.6553;Schwyz Alps;SZ
+Fulen;2491;311;46.9186;8.7147;Schwyz Alps;A2K+SZ+UR
+Roggenstock;1778;296;47.0233;8.7897;Schwyz Alps;SZ
+Fluebrig;2092;268;47.0614;8.8833;Schwyz Alps;SZ
+Vorder Glärnisch;2327;267;47.0219;9.0411;Schwyz Alps;GL
+Höch Turm;2666;264;46.9322;8.9358;Schwyz Alps;SZ
+Dosse;1684;252;47.0269;8.4989;Schwyz Alps;SZ
+Planggenstock;1675;251;47.1331;8.9936;Schwyz Alps;GL
+Brünnelistock;2133;250;47.0842;8.9725;Schwyz Alps;GL+SZ
+Furggelenstock;1656;250;47.0386;8.7331;Schwyz Alps;SZ
+Rüchigrat;2657;222;46.9792;8.9772;Schwyz Alps;GL
+Buechberg;631;202;47.2014;8.9089;Schwyz Alps;SZ
+Chli Aubrig;1642;201;47.1075;8.8622;Schwyz Alps;SZ
+Silberen;2319;199;46.9922;8.8994;Schwyz Alps;SZ
+Zindlenspitz;2097;195;47.0764;8.9600;Schwyz Alps;GL+SZ
+Fronalpstock (Stoos);1921;189;46.9681;8.6372;Schwyz Alps;SZ
+Biet;1965;185;47.0375;8.8411;Schwyz Alps;SZ
+Fläschenspitz;2073;177;47.0283;8.8717;Schwyz Alps;SZ
+Rossstock;2461;173;46.9172;8.7078;Schwyz Alps;SZ
+Hochstuckli;1566;156;47.0578;8.6697;Schwyz Alps;SZ
+Piz Sesvenna;3204;1055;46.7061;10.4031;Sesvenna Range;GR+ISO
+Piz Pisoc;3173;922;46.7444;10.2797;Sesvenna Range;GR+ISO
+Piz Tavrü;3168;851;46.6792;10.2961;Sesvenna Range;GR
+Piz Starlex;3075;779;46.6628;10.3925;Sesvenna Range;GR
+Piz S-chalembert;3031;722;46.8008;10.4133;Sesvenna Range;GR
+Piz Nuna;3123;535;46.7233;10.1544;Sesvenna Range;GR
+Piz Plavna Dadaint;3167;490;46.7086;10.2236;Sesvenna Range;GR
+Piz Linard;3411;1028;46.7989;10.0717;Silvretta Alps;GR+ISO
+Fluchthorn;3399;647;46.8908;10.2275;Silvretta Alps;GR+ISO
+Flüela Wisshorn;3085;632;46.7622;9.9667;Silvretta Alps;GR
+Piz Buin;3312;544;46.8442;10.1186;Silvretta Alps;GR
+Piz Murtera;3044;449;46.7753;10.0406;Silvretta Alps;GR
+Gross Seehorn;3122;434;46.8878;10.0325;Silvretta Alps;GR
+Augstenberg;3230;432;46.8644;10.2039;Silvretta Alps;GR
+Piz Fliana;3281;406;46.8272;10.1086;Silvretta Alps;GR
+Eisentälispitze;2875;386;46.9133;9.9625;Silvretta Alps;GR
+Verstanclahorn;3298;375;46.8350;10.0725;Silvretta Alps;GR
+Piz Tasna;3179;371;46.8592;10.2522;Silvretta Alps;GR
+Rosställispitz;2929;368;46.7892;9.9936;Silvretta Alps;GR
+Schildflue;2887;333;46.8806;9.9564;Silvretta Alps;GR
+Gamspleisspitze;3015;328;46.9317;10.2419;Silvretta Alps;GR
+Dreiländerspitze;3197;306;46.8508;10.1447;Silvretta Alps;GR
+Vorderes Plattenhorn;3220;300;46.8100;10.0331;Silvretta Alps;GR
+Krone;3187;243;46.8758;10.2319;Silvretta Alps;GR
+Piz Buin Pitschen;3256;205;46.8422;10.1122;Silvretta Alps;GR
+Silvrettahorn;3244;205;46.8569;10.0931;Silvretta Alps;GR
+Lindenberg;878;358;47.2536;8.2931;Swiss Plateau;ISO
+Seerücken;721;268;47.6489;9.0333;Swiss Plateau;ISO
+Chutzen;820;261;47.0147;7.3239;Swiss Plateau;ISO
+Irchel;694;260;47.5394;8.6072;Swiss Plateau;ISO
+Gurten;858;215;46.9172;7.4436;Swiss Plateau;BE
+Mont Vully;653;173;46.9639;7.0939;Swiss Plateau;ISO
+Dammastock;3630;1466;46.6433;8.4211;Uri Alps;ISO+UR+VS
+Titlis;3238;978;46.7719;8.4378;Uri Alps;BE+OW
+Fleckistock;3416;760;46.7075;8.4975;Uri Alps;UR
+Bürgenstock;1128;683;47.0003;8.3986;Uri Alps;NW
+Brunnistock;2952;661;46.8478;8.5500;Uri Alps;UR
+Gross Spannort;3198;616;46.7867;8.5244;Uri Alps;UR
+Glogghüs;2534;554;46.7606;8.2625;Uri Alps;BE+OW
+Schlossberg;3133;506;46.8025;8.5269;Uri Alps;UR
+Stanserhorn;1898;500;46.9297;8.3403;Uri Alps;NW
+Rotsandnollen;2700;493;46.8006;8.3439;Uri Alps;NW+OW
+Hoh Brisen;2413;489;46.8975;8.4658;Uri Alps;A2K+NW+UR
+Sustenhorn;3503;414;46.6989;8.4553;Uri Alps;BE+UR
+Güpfi;2043;381;46.7961;8.1953;Uri Alps;OW
+Schluchberg;2106;364;46.8667;8.3339;Uri Alps;NW+OW
+Mährenhorn;2923;355;46.6917;8.3108;Uri Alps;BE
+Gross Wendenstock;3042;346;46.7617;8.3803;Uri Alps;BE
+Krönten;3108;330;46.7822;8.5694;Uri Alps;UR
+Wissigstock;2887;329;46.8456;8.5067;Uri Alps;OW+UR
+Niderbauen-Chulm;1923;327;46.9475;8.5567;Uri Alps;NW+UR
+Wendenhorn;3023;311;46.7539;8.4436;Uri Alps;BE+UR
+Diechterhorn;3389;308;46.6486;8.3606;Uri Alps;BE
+Oberbauenstock;2117;297;46.9278;8.5442;Uri Alps;NW
+Heitlistock;2146;284;46.8108;8.2506;Uri Alps;OW
+Gross Sättelistock;2637;272;46.8525;8.4364;Uri Alps;NW+OW
+Graustock;2662;256;46.7878;8.3689;Uri Alps;BE+NW+OW
+Rorspitzli;3220;255;46.6906;8.5228;Uri Alps;UR
+Ruchstock;2814;255;46.8567;8.4706;Uri Alps;NW
+Galenstock;3586;252;46.6119;8.4169;Uri Alps;UR+VS
+Reissend Nollen;3003;229;46.7667;8.4008;Uri Alps;BE+OW
+Buochserhorn;1807;227;46.9456;8.4286;Uri Alps;NW
+Gwächtenhorn;3420;218;46.6908;8.4133;Uri Alps;BE+UR
+Nünalphorn;2385;214;46.8239;8.3256;Uri Alps;NW+OW
+Hahnen;2606;201;46.8239;8.4556;Uri Alps;OW
+Gärstenhörner;3189;200;46.5983;8.3617;Uri Alps;BE+VS
+Chingstuel;2118;190;46.7694;8.2067;Uri Alps;BE+OW
+Hinter Tierberg;3477;187;46.6842;8.3975;Uri Alps;BE+UR
+Steinhüshorn;3121;182;46.6678;8.3322;Uri Alps;BE
+Tieralplistock;3388;173;46.6331;8.3753;Uri Alps;BE
+Sustenspitz;2931;170;46.7178;8.4472;Uri Alps;BE
+Bänzlauistock;2530;170;46.6925;8.2778;Uri Alps;BE
+Giglistock;2900;166;46.7097;8.3867;Uri Alps;BE
+Tällistock;2580;165;46.7456;8.3250;Uri Alps;BE
+Hochstollen;2481;160;46.7736;8.2378;Uri Alps;OW
+Hoch Horefellistock;3175;154;46.6694;8.4750;Uri Alps;UR
+Grand Muveran;3051;1013;46.2372;7.1261;Vaud Alps;VD+VS
+Diablerets;3216;974;46.3039;7.1889;Vaud Alps;ISO+VD+VS
+Tour d'Aï;2331;886;46.3722;7.0019;Vaud Alps;A2K
+Rochers de Naye;2042;582;46.4319;6.9762;Vaud Alps;WP
+Gummfluh;2458;574;46.4406;7.1950;Vaud Alps;A2K+BE
+Gros Van;2189;528;46.3964;7.0692;Vaud Alps;A2K
+Haut de Cry;2969;525;46.2403;7.1950;Vaud Alps;VS
+Dent de Morcles;2969;466;46.1992;7.0756;Vaud Alps;VD+VS
+Wittenberghorn;2350;465;46.4161;7.2100;Vaud Alps;A2K+BE
+Grand Chavalard;2899;446;46.1786;7.1131;Vaud Alps;VS
+Mont Gond;2710;395;46.2856;7.2636;Vaud Alps;VS
+L'Argentine;2422;393;46.2733;7.1308;Vaud Alps;A2K
+Le Chamossaire;2113;380;46.3267;7.0613;Vaud Alps;WP
+Dent Favre;2917;316;46.2103;7.1039;Vaud Alps;VD+VS
+Oldenhorn;3123;307;46.3292;7.2217;Vaud Alps;BE+VD+VS
+Petit Muveran;2810;265;46.2236;7.1225;Vaud Alps;VD+VS
+L'Ardève;1501;220;46.1975;7.1992;Vaud Alps;VS
+Tour de Mayen;2327;185;46.3744;7.0083;Vaud Alps;WP
+Dent de Chamosentse;2721;174;46.2347;7.1531;Vaud Alps;VS
+Pointe de Chemo;2626;170;46.2236;7.1461;Vaud Alps;VS
+Tête à Pierre Grept;2904;165;46.2528;7.1553;Vaud Alps;VD+VS
+Dent de Jaman;1875;130;46.4449;6.9749;Vaud Alps;WP
+Pic Chaussy;2351;113;46.3771;7.1128;Vaud Alps;WP

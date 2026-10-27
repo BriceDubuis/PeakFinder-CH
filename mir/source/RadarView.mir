@@ -1,0 +1,2093 @@
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Math,3,14,18]; ]
+import Toybox.Math;
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Timer,4,14,19]; ]
+import Toybox.Timer;
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [WatchUi,5,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 10; @symbol_classdef = [RadarView,10,6,15]; @symbol_extends<0> = [WatchUi,10,24,31]; @symbol_extends<1> = [View,10,32,36]; ]
+class RadarView extends WatchUi.View {
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 11; @position = 8; @symbol_vardef = [selected,11,8,16]; @symbol_type<0> = [Peak,11,20,24]; ]
+    var selected as Peak or Null = null;
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 12; @position = 8; @symbol_vardef = [manual,12,8,14]; @symbol_type<0> = [Boolean,12,18,25]; ]
+    var manual as Boolean = false;
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 13; @position = 16; @symbol_vardef = [_timer,13,16,22]; @symbol_type<0> = [Timer,13,26,31]; @symbol_type<1> = [Timer,13,32,37]; ]
+    private
+    var _timer as Timer.Timer or Null;
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
+    function initialize() as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_15_26_17_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 16 8 ]
+        symbol [ View %tmp.2 16 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 16 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_15_26_17_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 19; @symbol_functiondef = [onShow,19,13,19]; ]
+    function onShow() as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_19_30_23_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 20 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_19_30_23_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_19_30_23_4_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 20 12 13 ];
+        symbol [ Timer %tmp.3 20 20 25 ];
+        %tmp.3 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.4 20 26 31 ];
+        %tmp.4 = getv function ? %tmp.3 :Timer;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %t.1 %tmp.1;
+        symbol [ t %t.1 20 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 21 8 ]
+        %tmp.5 = lgetv %t.1;
+        symbol [ t %tmp.5 21 8 9 ];
+        symbol [ start %tmp.6 21 10 15 ];
+        %tmp.6 = getv function %tmp.5 :start;
+        %tmp.7 = self;
+        symbol [ method %tmp.8 21 16 22 ];
+        %tmp.8 = getv function %tmp.7 :method;
+        %tmp.10 = const :onTick;
+        symbol [ onTick %tmp.10 21 24 30 const ];
+        %tmp.11 = invoke %tmp.7 %tmp.8(%tmp.10);
+        %tmp.12 = 400;
+        %tmp.13 = true;
+        invoke %tmp.5 %tmp.6(%tmp.11, %tmp.12, %tmp.13);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 22 8 ]
+        %tmp.14 = lgetv %t.1;
+        symbol [ t %tmp.14 22 17 18 ];
+        symbol [ _timer ? 22 8 14 ];
+        putv self :_timer %tmp.14;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_19_30_23_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 25; @symbol_functiondef = [onHide,25,13,19]; ]
+    function onHide() as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_25_30_31_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 26 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_25_30_31_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_25_30_31_4_stop" ]
+        %t.1 = local;
+        symbol [ t %t.1 26 12 13 ];
+        symbol [ _timer %tmp.2 26 16 22 ];
+        %tmp.2 = getv ? :_timer;
+        lputv %t.1 %tmp.2;
+        symbol [ t %t.1 26 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 27 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_8_29_8_if_stmt:
+        %tmp.3 = lgetv %t.1;
+        symbol [ t %tmp.3 27 12 13 ];
+        %tmp.4 = null;
+        %tmp.5 = ne %tmp.3 %tmp.4;
+        bf %tmp.5 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_8_29_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_8_29_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_23_29_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 28 12 ]
+        %tmp.6 = lgetv %t.1;
+        symbol [ t %tmp.6 28 12 13 ];
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 28 14 18 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_23_29_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_8_29_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_27_8_29_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 30 8 ]
+        %tmp.9 = null;
+        symbol [ _timer ? 30 8 14 ];
+        putv self :_timer %tmp.9;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_25_30_31_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 33; @symbol_functiondef = [onTick,33,13,19]; ]
+    function onTick() as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_33_30_35_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 34 8 ]
+        symbol [ WatchUi %tmp.1 34 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 34 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_33_30_35_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 38; @symbol_functiondef = [step,38,13,17]; @symbol_param<0> = [dir,38,18,21]; @symbol_param<0>_type<0> = [Number,38,25,31]; ]
+    function step(dir as Number) as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 39 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_stop" ]
+        %peaks.1 = local;
+        symbol [ peaks %peaks.1 39 12 17 ];
+        symbol [ $ %tmp.1 39 20 21 ];
+        %tmp.1 = getm $;
+        symbol [ getModel %tmp.2 39 22 30 ];
+        %tmp.2 = getv function %tmp.1 :getModel;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ peaks %tmp.4 39 33 38 ];
+        %tmp.4 = getv %tmp.3 :peaks;
+        lputv %peaks.1 %tmp.4;
+        symbol [ peaks %peaks.1 39 12 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 40 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_8_42_8_if_stmt:
+        %tmp.5 = lgetv %peaks.1;
+        symbol [ peaks %tmp.5 40 12 17 ];
+        symbol [ size %tmp.6 40 18 22 ];
+        %tmp.6 = getv function %tmp.5 :size;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = 0;
+        %tmp.9 = eq %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_8_42_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_8_42_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_31_42_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 41 12 ]
+        ret ?;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_31_42_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_8_42_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_40_8_42_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 43 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_stop" ]
+        %cur.2 = local;
+        symbol [ cur %cur.2 43 12 15 ];
+        symbol [ selected %tmp.11 43 18 26 ];
+        %tmp.11 = getv ? :selected;
+        lputv %cur.2 %tmp.11;
+        symbol [ cur %cur.2 43 12 15 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 44 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_stmt:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_12_44_48_begin:
+        %tmp.12 = lgetv %cur.2;
+        symbol [ cur %tmp.12 44 12 15 ];
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bt %tmp.14 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_true;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_27_44_48_false:
+        %tmp.15 = lgetv %peaks.1;
+        symbol [ peaks %tmp.15 44 27 32 ];
+        symbol [ indexOf %tmp.16 44 33 40 ];
+        %tmp.16 = getv function %tmp.15 :indexOf;
+        %tmp.17 = lgetv %cur.2;
+        symbol [ cur %tmp.17 44 41 44 ];
+        %tmp.18 = as %tmp.17 { (!Null) };
+        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.18);
+        %tmp.20 = 0;
+        %tmp.21 = lt %tmp.19 %tmp.20;
+        push %tmp.21;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_27_44_48_end:
+        %tmp.22 = phi [%tmp.14 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_12_44_48_begin] [%tmp.21 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_27_44_48_false] [%tmp.22 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_27_44_48_end];
+        bf %tmp.22 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_51_46_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 45 12 ]
+        %tmp.23 = lgetv %peaks.1;
+        symbol [ peaks %tmp.23 45 23 28 ];
+        %tmp.24 = 0;
+        %tmp.25 = agetv %tmp.23 %tmp.24;
+        symbol [ selected ? 45 12 20 ];
+        putv self :selected %tmp.25;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_51_46_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_else_false:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 47 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_stop" ]
+        %best.3 = local;
+        symbol [ best %best.3 47 16 20 ];
+        %tmp.26 = null;
+        lputv %best.3 %tmp.26;
+        symbol [ best %best.3 47 16 20 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 48 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_stop" ]
+        %bestD.4 = local;
+        symbol [ bestD %bestD.4 48 16 21 ];
+        %tmp.27 = 999.0f;
+        lputv %bestD.4 %tmp.27;
+        symbol [ bestD %bestD.4 48 16 21 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 49 12 ]
+        for @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_test @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_incr @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_init:
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_begin" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 49 21 22 ];
+        %tmp.28 = 0;
+        lputv %i.5 %tmp.28;
+        symbol [ i %i.5 49 21 22 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_test:
+        %tmp.29 = lgetv %i.5;
+        symbol [ i %tmp.29 49 28 29 ];
+        %tmp.30 = lgetv %peaks.1;
+        symbol [ peaks %tmp.30 49 32 37 ];
+        symbol [ size %tmp.31 49 38 42 ];
+        %tmp.31 = getv function %tmp.30 :size;
+        %tmp.32 = invoke %tmp.30 %tmp.31();
+        %tmp.33 = lt %tmp.29 %tmp.32;
+        bf %tmp.33 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_begin:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_51_61_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 50 16 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_51_61_12_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_51_61_12_stop" ]
+        %p.6 = local;
+        symbol [ p %p.6 50 20 21 ];
+        %tmp.34 = lgetv %peaks.1;
+        symbol [ peaks %tmp.34 50 24 29 ];
+        %tmp.35 = lgetv %i.5;
+        symbol [ i %tmp.35 50 30 31 ];
+        %tmp.36 = agetv %tmp.34 %tmp.35;
+        lputv %p.6 %tmp.36;
+        symbol [ p %p.6 50 20 21 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 51 16 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_16_60_16_if_stmt:
+        %tmp.37 = lgetv %p.6;
+        symbol [ p %tmp.37 51 20 21 ];
+        %tmp.38 = lgetv %cur.2;
+        symbol [ cur %tmp.38 51 25 28 ];
+        %tmp.39 = as %tmp.38 { (!Null) };
+        %tmp.40 = ne %tmp.37 %tmp.39;
+        bf %tmp.40 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_16_60_16_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_16_60_16_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_30_60_16_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 52 20 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_30_60_16_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_30_60_16_stop" ]
+        %d.7 = local;
+        symbol [ d %d.7 52 24 25 ];
+        symbol [ Geo %tmp.42 52 28 31 ];
+        %tmp.42 = getv ? :Geo;
+        symbol [ norm360 %tmp.43 52 32 39 ];
+        %tmp.43 = getv function %tmp.42 :norm360;
+        %tmp.44 = lgetv %p.6;
+        symbol [ p %tmp.44 52 41 42 ];
+        symbol [ brg %tmp.45 52 43 46 ];
+        %tmp.45 = getv %tmp.44 :brg;
+        %tmp.46 = lgetv %cur.2;
+        symbol [ cur %tmp.46 52 49 52 ];
+        %tmp.47 = as %tmp.46 { (!Null) };
+        symbol [ brg %tmp.48 52 53 56 ];
+        %tmp.48 = getv %tmp.47 :brg;
+        %tmp.49 = sub %tmp.45 %tmp.48;
+        %tmp.50 = lgetv %dir;
+        symbol [ dir %tmp.50 52 60 63 ];
+        %tmp.51 = mul %tmp.49 %tmp.50;
+        %tmp.52 = invoke %tmp.42 %tmp.43(%tmp.51);
+        lputv %d.7 %tmp.52;
+        symbol [ d %d.7 52 24 25 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 53 20 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_20_55_20_if_stmt:
+        %tmp.53 = lgetv %d.7;
+        symbol [ d %tmp.53 53 24 25 ];
+        %tmp.54 = 0.0f;
+        %tmp.55 = eq %tmp.53 %tmp.54;
+        bf %tmp.55 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_20_55_20_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_20_55_20_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_35_55_20_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 54 24 ]
+        %tmp.56 = 360.0f;
+        lputv %d.7 %tmp.56;
+        symbol [ d %d.7 54 24 25 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_35_55_20_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_20_55_20_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_53_20_55_20_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 56 20 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_20_59_20_if_stmt:
+        %tmp.57 = lgetv %d.7;
+        symbol [ d %tmp.57 56 24 25 ];
+        %tmp.58 = lgetv %bestD.4;
+        symbol [ bestD %tmp.58 56 28 33 ];
+        %tmp.59 = lt %tmp.57 %tmp.58;
+        bf %tmp.59 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_20_59_20_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_20_59_20_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_35_59_20_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 57 24 ]
+        %tmp.60 = lgetv %d.7;
+        symbol [ d %tmp.60 57 32 33 ];
+        lputv %bestD.4 %tmp.60;
+        symbol [ bestD %bestD.4 57 24 29 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 58 24 ]
+        %tmp.61 = lgetv %p.6;
+        symbol [ p %tmp.61 58 31 32 ];
+        lputv %best.3 %tmp.61;
+        symbol [ best %best.3 58 24 28 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_35_59_20_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_20_59_20_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_56_20_59_20_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_30_60_16_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_16_60_16_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_51_16_60_16_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_51_61_12_stop:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_incr:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 49 ]
+        %tmp.64 = lgetv %i.5;
+        symbol [ i %tmp.64 49 46 47 ];
+        %tmp.65 = add %tmp.64 1;
+        lputv %i.5 %tmp.65;
+        symbol [ i %i.5 49 46 47 ];
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_test;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_49_12_61_12_for_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 62 12 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_12_64_12_if_stmt:
+        %tmp.66 = lgetv %best.3;
+        symbol [ best %tmp.66 62 16 20 ];
+        %tmp.67 = null;
+        %tmp.68 = ne %tmp.66 %tmp.67;
+        bf %tmp.68 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_12_64_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_12_64_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_30_64_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 63 16 ]
+        %tmp.69 = lgetv %best.3;
+        symbol [ best %tmp.69 63 27 31 ];
+        %tmp.70 = as %tmp.69 { (!Null) };
+        symbol [ selected ? 63 16 24 ];
+        putv self :selected %tmp.70;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_30_64_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_12_64_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_62_12_64_12_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_46_15_65_8_stop:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_44_8_65_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 66 8 ]
+        %tmp.71 = true;
+        symbol [ manual ? 66 8 14 ];
+        putv self :manual %tmp.71;
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 67 8 ]
+        symbol [ WatchUi %tmp.72 67 8 15 ];
+        %tmp.72 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.73 67 16 29 ];
+        %tmp.73 = getv function %tmp.72 :requestUpdate;
+        invoke %tmp.72 %tmp.73();
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_38_41_68_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 70; @symbol_functiondef = [onUpdate,70,13,21]; @symbol_param<0> = [dc,70,22,24]; @symbol_param<0>_type<0> = [Dc,70,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 71 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %m.1 = local;
+        symbol [ m %m.1 71 12 13 ];
+        symbol [ $ %tmp.1 71 16 17 ];
+        %tmp.1 = getm $;
+        symbol [ getModel %tmp.2 71 18 26 ];
+        %tmp.2 = getv function %tmp.1 :getModel;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %m.1 %tmp.3;
+        symbol [ m %m.1 71 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 72 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 72 8 10 ];
+        symbol [ setColor %tmp.5 72 11 19 ];
+        %tmp.5 = getv function %tmp.4 :setColor;
+        symbol [ Graphics %tmp.6 72 20 28 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.7 72 29 40 ];
+        %tmp.7 = getv %tmp.6 :COLOR_WHITE;
+        symbol [ Graphics %tmp.8 72 42 50 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.9 72 51 62 ];
+        %tmp.9 = getv %tmp.8 :COLOR_BLACK;
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 73 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 73 8 10 ];
+        symbol [ clear %tmp.11 73 11 16 ];
+        %tmp.11 = getv function %tmp.10 :clear;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 74 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_8_76_8_if_stmt:
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 74 12 14 ];
+        %tmp.14 = const :setAntiAlias;
+        symbol [ setAntiAlias %tmp.14 74 20 32 const ];
+        %tmp.15 = canhazplz %tmp.12 %tmp.14;
+        bf %tmp.15 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_8_76_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_8_76_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_34_76_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 75 12 ]
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 75 12 14 ];
+        %tmp.17 = as %tmp.16 { (interface { var setAntiAlias; }) };
+        symbol [ setAntiAlias %tmp.18 75 15 27 ];
+        %tmp.18 = getv function %tmp.17 :setAntiAlias;
+        %tmp.19 = true;
+        invoke %tmp.17 %tmp.18(%tmp.19);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_34_76_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_8_76_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_74_8_76_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 77 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %w.2 = local;
+        symbol [ w %w.2 77 12 13 ];
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 77 16 18 ];
+        symbol [ getWidth %tmp.21 77 19 27 ];
+        %tmp.21 = getv function %tmp.20 :getWidth;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        lputv %w.2 %tmp.22;
+        symbol [ w %w.2 77 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 78 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %h.3 = local;
+        symbol [ h %h.3 78 12 13 ];
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 78 16 18 ];
+        symbol [ getHeight %tmp.24 78 19 28 ];
+        %tmp.24 = getv function %tmp.23 :getHeight;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        lputv %h.3 %tmp.25;
+        symbol [ h %h.3 78 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 79 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %cx.4 = local;
+        symbol [ cx %cx.4 79 12 14 ];
+        %tmp.26 = lgetv %w.2;
+        symbol [ w %tmp.26 79 17 18 ];
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        lputv %cx.4 %tmp.28;
+        symbol [ cx %cx.4 79 12 14 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 80 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %cy.5 = local;
+        symbol [ cy %cy.5 80 12 14 ];
+        %tmp.29 = lgetv %h.3;
+        symbol [ h %tmp.29 80 17 18 ];
+        %tmp.30 = 2;
+        %tmp.31 = div %tmp.29 %tmp.30;
+        lputv %cy.5 %tmp.31;
+        symbol [ cy %cy.5 80 12 14 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 81 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %rOut.6 = local;
+        symbol [ rOut %rOut.6 81 12 16 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_begin:
+        %tmp.32 = lgetv %w.2;
+        symbol [ w %tmp.32 81 20 21 ];
+        %tmp.33 = lgetv %h.3;
+        symbol [ h %tmp.33 81 24 25 ];
+        %tmp.34 = lt %tmp.32 %tmp.33;
+        bf %tmp.34 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_true:
+        %tmp.35 = lgetv %w.2;
+        symbol [ w %tmp.35 81 28 29 ];
+        push %tmp.35;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_else_false:
+        %tmp.36 = lgetv %h.3;
+        symbol [ h %tmp.36 81 32 33 ];
+        push %tmp.36;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_end:
+        %tmp.37 = phi [%tmp.34 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_begin] [%tmp.35 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_true] [%tmp.36 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_else_false] [%tmp.37 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_81_20_81_32_end];
+        %tmp.38 = 2;
+        %tmp.39 = div %tmp.37 %tmp.38;
+        %tmp.40 = 4;
+        %tmp.41 = sub %tmp.39 %tmp.40;
+        lputv %rOut.6 %tmp.41;
+        symbol [ rOut %rOut.6 81 12 16 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 82 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %rIn.7 = local;
+        symbol [ rIn %rIn.7 82 12 15 ];
+        %tmp.42 = lgetv %rOut.6;
+        symbol [ rOut %tmp.42 82 18 22 ];
+        %tmp.43 = 58;
+        %tmp.44 = mul %tmp.42 %tmp.43;
+        %tmp.45 = 100;
+        %tmp.46 = div %tmp.44 %tmp.45;
+        lputv %rIn.7 %tmp.46;
+        symbol [ rIn %rIn.7 82 12 15 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 84 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_8_90_8_if_stmt:
+        %tmp.47 = lgetv %m.1;
+        symbol [ m %tmp.47 84 12 13 ];
+        symbol [ lat %tmp.48 84 14 17 ];
+        %tmp.48 = getv %tmp.47 :lat;
+        %tmp.49 = null;
+        %tmp.50 = eq %tmp.48 %tmp.49;
+        bf %tmp.50 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_8_90_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_8_90_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_27_90_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 85 12 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 85 12 14 ];
+        symbol [ drawText %tmp.52 85 15 23 ];
+        %tmp.52 = getv function %tmp.51 :drawText;
+        %tmp.53 = lgetv %cx.4;
+        symbol [ cx %tmp.53 85 24 26 ];
+        %tmp.54 = lgetv %cy.5;
+        symbol [ cy %tmp.54 85 28 30 ];
+        %tmp.55 = 20;
+        %tmp.56 = sub %tmp.54 %tmp.55;
+        symbol [ Graphics %tmp.57 85 37 45 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.58 85 46 56 ];
+        %tmp.58 = getv %tmp.57 :FONT_SMALL;
+        %tmp.59 = "PeakFinder";
+        symbol [ Ui %tmp.61 85 72 74 ];
+        %tmp.61 = getv ? :Ui;
+        symbol [ CENTER %tmp.62 85 75 81 ];
+        %tmp.62 = getv %tmp.61 :CENTER;
+        invoke %tmp.51 %tmp.52(%tmp.53, %tmp.56, %tmp.58, %tmp.59, %tmp.62);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 86 12 ]
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 86 12 14 ];
+        symbol [ setColor %tmp.64 86 15 23 ];
+        %tmp.64 = getv function %tmp.63 :setColor;
+        symbol [ Graphics %tmp.65 86 24 32 ];
+        %tmp.65 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.66 86 33 46 ];
+        %tmp.66 = getv %tmp.65 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.67 86 48 56 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.68 86 57 74 ];
+        %tmp.68 = getv %tmp.67 :COLOR_TRANSPARENT;
+        invoke %tmp.63 %tmp.64(%tmp.66, %tmp.68);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 87 12 ]
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 87 12 14 ];
+        symbol [ drawText %tmp.70 87 15 23 ];
+        %tmp.70 = getv function %tmp.69 :drawText;
+        %tmp.71 = lgetv %cx.4;
+        symbol [ cx %tmp.71 87 24 26 ];
+        %tmp.72 = lgetv %cy.5;
+        symbol [ cy %tmp.72 87 28 30 ];
+        %tmp.73 = 15;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        symbol [ Graphics %tmp.75 87 37 45 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.76 87 46 55 ];
+        %tmp.76 = getv %tmp.75 :FONT_TINY;
+        %tmp.77 = "Searching GPS...";
+        symbol [ Ui %tmp.79 87 77 79 ];
+        %tmp.79 = getv ? :Ui;
+        symbol [ CENTER %tmp.80 87 80 86 ];
+        %tmp.80 = getv %tmp.79 :CENTER;
+        invoke %tmp.69 %tmp.70(%tmp.71, %tmp.74, %tmp.76, %tmp.77, %tmp.80);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 88 12 ]
+        %tmp.81 = lgetv %dc;
+        symbol [ dc %tmp.81 88 12 14 ];
+        symbol [ drawText %tmp.82 88 15 23 ];
+        %tmp.82 = getv function %tmp.81 :drawText;
+        %tmp.83 = lgetv %cx.4;
+        symbol [ cx %tmp.83 88 24 26 ];
+        %tmp.84 = lgetv %cy.5;
+        symbol [ cy %tmp.84 88 28 30 ];
+        %tmp.85 = 45;
+        %tmp.86 = add %tmp.84 %tmp.85;
+        symbol [ Graphics %tmp.87 88 37 45 ];
+        %tmp.87 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.88 88 46 56 ];
+        %tmp.88 = getv %tmp.87 :FONT_XTINY;
+        %tmp.89 = "Go outside, sky in view";
+        symbol [ Ui %tmp.91 88 85 87 ];
+        %tmp.91 = getv ? :Ui;
+        symbol [ CENTER %tmp.92 88 88 94 ];
+        %tmp.92 = getv %tmp.91 :CENTER;
+        invoke %tmp.81 %tmp.82(%tmp.83, %tmp.86, %tmp.88, %tmp.89, %tmp.92);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 89 12 ]
+        ret ?;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_27_90_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_8_90_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_84_8_90_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 92 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %heading.8 = local;
+        symbol [ heading %heading.8 92 12 19 ];
+        symbol [ Geo %tmp.94 92 22 25 ];
+        %tmp.94 = getv ? :Geo;
+        symbol [ headingDeg %tmp.95 92 26 36 ];
+        %tmp.95 = getv function %tmp.94 :headingDeg;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        lputv %heading.8 %tmp.96;
+        symbol [ heading %heading.8 92 12 19 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 93 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %rot.9 = local;
+        symbol [ rot %rot.9 93 12 15 ];
+        %tmp.97 = 0.0f;
+        lputv %rot.9 %tmp.97;
+        symbol [ rot %rot.9 93 12 15 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 94 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_8_96_8_if_stmt:
+        %tmp.98 = lgetv %heading.8;
+        symbol [ heading %tmp.98 94 12 19 ];
+        %tmp.99 = null;
+        %tmp.100 = ne %tmp.98 %tmp.99;
+        bf %tmp.100 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_8_96_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_8_96_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_29_96_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 95 12 ]
+        %tmp.101 = lgetv %heading.8;
+        symbol [ heading %tmp.101 95 18 25 ];
+        %tmp.102 = as %tmp.101 { (!Null) };
+        lputv %rot.9 %tmp.102;
+        symbol [ rot %rot.9 95 12 15 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_29_96_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_8_96_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_94_8_96_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 97 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %peaks.10 = local;
+        symbol [ peaks %peaks.10 97 12 17 ];
+        %tmp.103 = lgetv %m.1;
+        symbol [ m %tmp.103 97 20 21 ];
+        symbol [ peaks %tmp.104 97 22 27 ];
+        %tmp.104 = getv %tmp.103 :peaks;
+        lputv %peaks.10 %tmp.104;
+        symbol [ peaks %peaks.10 97 12 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 100 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %sel.11 = local;
+        symbol [ sel %sel.11 100 12 15 ];
+        symbol [ selected %tmp.106 100 18 26 ];
+        %tmp.106 = getv ? :selected;
+        lputv %sel.11 %tmp.106;
+        symbol [ sel %sel.11 100 12 15 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 101 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_stmt:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_12_101_48_begin:
+        %tmp.107 = lgetv %sel.11;
+        symbol [ sel %tmp.107 101 12 15 ];
+        %tmp.108 = null;
+        %tmp.109 = ne %tmp.107 %tmp.108;
+        bf %tmp.109 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_27_101_48_true:
+        %tmp.110 = lgetv %peaks.10;
+        symbol [ peaks %tmp.110 101 27 32 ];
+        symbol [ indexOf %tmp.111 101 33 40 ];
+        %tmp.111 = getv function %tmp.110 :indexOf;
+        %tmp.112 = lgetv %sel.11;
+        symbol [ sel %tmp.112 101 41 44 ];
+        %tmp.113 = as %tmp.112 { (!Null) };
+        %tmp.114 = invoke %tmp.110 %tmp.111(%tmp.113);
+        %tmp.115 = 0;
+        %tmp.116 = lt %tmp.114 %tmp.115;
+        push %tmp.116;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_27_101_48_end:
+        %tmp.117 = phi [%tmp.109 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_12_101_48_begin] [%tmp.116 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_27_101_48_true] [%tmp.117 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_27_101_48_end];
+        bf %tmp.117 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_51_104_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 102 12 ]
+        %tmp.118 = null;
+        lputv %sel.11 %tmp.118;
+        symbol [ sel %sel.11 102 12 15 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 103 12 ]
+        %tmp.119 = false;
+        symbol [ manual ? 103 12 18 ];
+        putv self :manual %tmp.119;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_51_104_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_101_8_104_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 105 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_stmt:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_12_105_30_begin:
+        symbol [ manual %tmp.121 105 13 19 ];
+        %tmp.121 = getv ? :manual;
+        %tmp.122 = not %tmp.121;
+        bt %tmp.122 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_true;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_23_105_30_false:
+        %tmp.123 = lgetv %sel.11;
+        symbol [ sel %tmp.123 105 23 26 ];
+        %tmp.124 = null;
+        %tmp.125 = eq %tmp.123 %tmp.124;
+        push %tmp.125;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_23_105_30_end:
+        %tmp.126 = phi [%tmp.122 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_12_105_30_begin] [%tmp.125 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_23_105_30_false] [%tmp.126 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_23_105_30_end];
+        bf %tmp.126 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_36_113_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 106 12 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_stmt:
+        %tmp.127 = lgetv %peaks.10;
+        symbol [ peaks %tmp.127 106 16 21 ];
+        symbol [ size %tmp.128 106 22 26 ];
+        %tmp.128 = getv function %tmp.127 :size;
+        %tmp.129 = invoke %tmp.127 %tmp.128();
+        %tmp.130 = 0;
+        %tmp.131 = eq %tmp.129 %tmp.130;
+        bf %tmp.131 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_35_108_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 107 16 ]
+        %tmp.132 = null;
+        lputv %sel.11 %tmp.132;
+        symbol [ sel %sel.11 107 16 19 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_35_108_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_false:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 108 19 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_stmt:
+        %tmp.133 = lgetv %heading.8;
+        symbol [ heading %tmp.133 108 23 30 ];
+        %tmp.134 = null;
+        %tmp.135 = ne %tmp.133 %tmp.134;
+        bf %tmp.135 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_40_110_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 109 16 ]
+        %tmp.136 = lgetv %m.1;
+        symbol [ m %tmp.136 109 22 23 ];
+        symbol [ closestToBearing %tmp.137 109 24 40 ];
+        %tmp.137 = getv function %tmp.136 :closestToBearing;
+        %tmp.138 = lgetv %heading.8;
+        symbol [ heading %tmp.138 109 41 48 ];
+        %tmp.139 = as %tmp.138 { (!Null) };
+        %tmp.140 = invoke %tmp.136 %tmp.137(%tmp.139);
+        lputv %sel.11 %tmp.140;
+        symbol [ sel %sel.11 109 16 19 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_40_110_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_false:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 110 19 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_19_112_12_if_stmt:
+        %tmp.141 = lgetv %sel.11;
+        symbol [ sel %tmp.141 110 23 26 ];
+        %tmp.142 = null;
+        %tmp.143 = eq %tmp.141 %tmp.142;
+        bf %tmp.143 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_19_112_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_19_112_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_36_112_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 111 16 ]
+        %tmp.144 = lgetv %peaks.10;
+        symbol [ peaks %tmp.144 111 22 27 ];
+        %tmp.145 = 0;
+        %tmp.146 = agetv %tmp.144 %tmp.145;
+        lputv %sel.11 %tmp.146;
+        symbol [ sel %sel.11 111 16 19 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_36_112_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_19_112_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_110_19_112_12_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_108_19_112_12_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_106_12_112_12_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_36_113_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_105_8_113_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 114 8 ]
+        %tmp.147 = lgetv %sel.11;
+        symbol [ sel %tmp.147 114 19 22 ];
+        symbol [ selected ? 114 8 16 ];
+        putv self :selected %tmp.147;
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 116 8 ]
+        %tmp.148 = self;
+        symbol [ drawRing %tmp.149 116 8 16 ];
+        %tmp.149 = getv function %tmp.148 :drawRing;
+        %tmp.150 = lgetv %dc;
+        symbol [ dc %tmp.150 116 17 19 ];
+        %tmp.151 = lgetv %cx.4;
+        symbol [ cx %tmp.151 116 21 23 ];
+        %tmp.152 = lgetv %cy.5;
+        symbol [ cy %tmp.152 116 25 27 ];
+        %tmp.153 = lgetv %rOut.6;
+        symbol [ rOut %tmp.153 116 29 33 ];
+        %tmp.154 = lgetv %rIn.7;
+        symbol [ rIn %tmp.154 116 35 38 ];
+        %tmp.155 = lgetv %rot.9;
+        symbol [ rot %tmp.155 116 40 43 ];
+        %tmp.156 = lgetv %heading.8;
+        symbol [ heading %tmp.156 116 45 52 ];
+        %tmp.157 = null;
+        %tmp.158 = ne %tmp.156 %tmp.157;
+        invoke %tmp.148 %tmp.149(%tmp.150, %tmp.151, %tmp.152, %tmp.153, %tmp.154, %tmp.155, %tmp.158);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 118 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_8_126_8_if_stmt:
+        %tmp.159 = lgetv %peaks.10;
+        symbol [ peaks %tmp.159 118 12 17 ];
+        symbol [ size %tmp.160 118 18 22 ];
+        %tmp.160 = getv function %tmp.159 :size;
+        %tmp.161 = invoke %tmp.159 %tmp.160();
+        %tmp.162 = 0;
+        %tmp.163 = eq %tmp.161 %tmp.162;
+        bf %tmp.163 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_8_126_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_8_126_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_31_126_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 119 12 ]
+        %tmp.164 = lgetv %dc;
+        symbol [ dc %tmp.164 119 12 14 ];
+        symbol [ setColor %tmp.165 119 15 23 ];
+        %tmp.165 = getv function %tmp.164 :setColor;
+        symbol [ Graphics %tmp.166 119 24 32 ];
+        %tmp.166 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.167 119 33 44 ];
+        %tmp.167 = getv %tmp.166 :COLOR_WHITE;
+        symbol [ Graphics %tmp.168 119 46 54 ];
+        %tmp.168 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.169 119 55 72 ];
+        %tmp.169 = getv %tmp.168 :COLOR_TRANSPARENT;
+        invoke %tmp.164 %tmp.165(%tmp.167, %tmp.169);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 120 12 ]
+        %tmp.170 = lgetv %dc;
+        symbol [ dc %tmp.170 120 12 14 ];
+        symbol [ drawText %tmp.171 120 15 23 ];
+        %tmp.171 = getv function %tmp.170 :drawText;
+        %tmp.172 = lgetv %cx.4;
+        symbol [ cx %tmp.172 120 24 26 ];
+        %tmp.173 = lgetv %cy.5;
+        symbol [ cy %tmp.173 120 28 30 ];
+        %tmp.174 = 12;
+        %tmp.175 = sub %tmp.173 %tmp.174;
+        symbol [ Graphics %tmp.176 120 37 45 ];
+        %tmp.176 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.177 120 46 55 ];
+        %tmp.177 = getv %tmp.176 :FONT_TINY;
+        %tmp.178 = "No summit within";
+        symbol [ Ui %tmp.180 120 77 79 ];
+        %tmp.180 = getv ? :Ui;
+        symbol [ CENTER %tmp.181 120 80 86 ];
+        %tmp.181 = getv %tmp.180 :CENTER;
+        invoke %tmp.170 %tmp.171(%tmp.172, %tmp.175, %tmp.177, %tmp.178, %tmp.181);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 121 12 ]
+        %tmp.182 = lgetv %dc;
+        symbol [ dc %tmp.182 121 12 14 ];
+        symbol [ drawText %tmp.183 121 15 23 ];
+        %tmp.183 = getv function %tmp.182 :drawText;
+        %tmp.184 = lgetv %cx.4;
+        symbol [ cx %tmp.184 121 24 26 ];
+        %tmp.185 = lgetv %cy.5;
+        symbol [ cy %tmp.185 121 28 30 ];
+        %tmp.186 = 12;
+        %tmp.187 = add %tmp.185 %tmp.186;
+        symbol [ Graphics %tmp.188 121 37 45 ];
+        %tmp.188 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.189 121 46 55 ];
+        %tmp.189 = getv %tmp.188 :FONT_TINY;
+        %tmp.190 = lgetv %m.1;
+        symbol [ m %tmp.190 121 57 58 ];
+        symbol [ radiusKm %tmp.191 121 59 67 ];
+        %tmp.191 = getv function %tmp.190 :radiusKm;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        symbol [ toString %tmp.193 121 70 78 ];
+        %tmp.193 = getv function %tmp.192 :toString;
+        %tmp.194 = invoke %tmp.192 %tmp.193();
+        %tmp.195 = " km";
+        %tmp.196 = add %tmp.194 %tmp.195;
+        symbol [ Ui %tmp.198 121 90 92 ];
+        %tmp.198 = getv ? :Ui;
+        symbol [ CENTER %tmp.199 121 93 99 ];
+        %tmp.199 = getv %tmp.198 :CENTER;
+        invoke %tmp.182 %tmp.183(%tmp.184, %tmp.187, %tmp.189, %tmp.196, %tmp.199);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 122 12 ]
+        %tmp.200 = lgetv %dc;
+        symbol [ dc %tmp.200 122 12 14 ];
+        symbol [ setColor %tmp.201 122 15 23 ];
+        %tmp.201 = getv function %tmp.200 :setColor;
+        symbol [ Graphics %tmp.202 122 24 32 ];
+        %tmp.202 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.203 122 33 46 ];
+        %tmp.203 = getv %tmp.202 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.204 122 48 56 ];
+        %tmp.204 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.205 122 57 74 ];
+        %tmp.205 = getv %tmp.204 :COLOR_TRANSPARENT;
+        invoke %tmp.200 %tmp.201(%tmp.203, %tmp.205);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 123 12 ]
+        %tmp.206 = lgetv %dc;
+        symbol [ dc %tmp.206 123 12 14 ];
+        symbol [ drawText %tmp.207 123 15 23 ];
+        %tmp.207 = getv function %tmp.206 :drawText;
+        %tmp.208 = lgetv %cx.4;
+        symbol [ cx %tmp.208 123 24 26 ];
+        %tmp.209 = lgetv %cy.5;
+        symbol [ cy %tmp.209 123 28 30 ];
+        %tmp.210 = 38;
+        %tmp.211 = add %tmp.209 %tmp.210;
+        symbol [ Graphics %tmp.212 123 37 45 ];
+        %tmp.212 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.213 123 46 56 ];
+        %tmp.213 = getv %tmp.212 :FONT_XTINY;
+        %tmp.214 = "Hold UP: settings";
+        symbol [ Ui %tmp.216 123 79 81 ];
+        %tmp.216 = getv ? :Ui;
+        symbol [ CENTER %tmp.217 123 82 88 ];
+        %tmp.217 = getv %tmp.216 :CENTER;
+        invoke %tmp.206 %tmp.207(%tmp.208, %tmp.211, %tmp.213, %tmp.214, %tmp.217);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 124 12 ]
+        %tmp.218 = self;
+        symbol [ drawGps %tmp.219 124 12 19 ];
+        %tmp.219 = getv function %tmp.218 :drawGps;
+        %tmp.220 = lgetv %dc;
+        symbol [ dc %tmp.220 124 20 22 ];
+        %tmp.221 = lgetv %cx.4;
+        symbol [ cx %tmp.221 124 24 26 ];
+        %tmp.222 = lgetv %cy.5;
+        symbol [ cy %tmp.222 124 28 30 ];
+        %tmp.223 = lgetv %rIn.7;
+        symbol [ rIn %tmp.223 124 33 36 ];
+        %tmp.224 = sub %tmp.222 %tmp.223;
+        %tmp.225 = 12;
+        %tmp.226 = add %tmp.224 %tmp.225;
+        %tmp.227 = lgetv %m.1;
+        symbol [ m %tmp.227 124 43 44 ];
+        symbol [ quality %tmp.228 124 45 52 ];
+        %tmp.228 = getv %tmp.227 :quality;
+        invoke %tmp.218 %tmp.219(%tmp.220, %tmp.221, %tmp.226, %tmp.228);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 125 12 ]
+        ret ?;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_31_126_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_8_126_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_118_8_126_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 129 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %radius.12 = local;
+        symbol [ radius %radius.12 129 12 18 ];
+        %tmp.229 = lgetv %m.1;
+        symbol [ m %tmp.229 129 21 22 ];
+        symbol [ radiusKm %tmp.230 129 23 31 ];
+        %tmp.230 = getv function %tmp.229 :radiusKm;
+        %tmp.231 = invoke %tmp.229 %tmp.230();
+        symbol [ toFloat %tmp.232 129 34 41 ];
+        %tmp.232 = getv function %tmp.231 :toFloat;
+        %tmp.233 = invoke %tmp.231 %tmp.232();
+        lputv %radius.12 %tmp.233;
+        symbol [ radius %radius.12 129 12 18 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 130 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop" ]
+        %span.13 = local;
+        symbol [ span %span.13 130 12 16 ];
+        %tmp.234 = lgetv %rOut.6;
+        symbol [ rOut %tmp.234 130 19 23 ];
+        %tmp.235 = lgetv %rIn.7;
+        symbol [ rIn %tmp.235 130 26 29 ];
+        %tmp.236 = sub %tmp.234 %tmp.235;
+        %tmp.237 = 26;
+        %tmp.238 = sub %tmp.236 %tmp.237;
+        lputv %span.13 %tmp.238;
+        symbol [ span %span.13 130 12 16 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 131 8 ]
+        for @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_test @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_incr @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_init:
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_begin" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_end" ]
+        %i.14 = local;
+        symbol [ i %i.14 131 17 18 ];
+        %tmp.239 = lgetv %peaks.10;
+        symbol [ peaks %tmp.239 131 21 26 ];
+        symbol [ size %tmp.240 131 27 31 ];
+        %tmp.240 = getv function %tmp.239 :size;
+        %tmp.241 = invoke %tmp.239 %tmp.240();
+        %tmp.242 = 1;
+        %tmp.243 = sub %tmp.241 %tmp.242;
+        lputv %i.14 %tmp.243;
+        symbol [ i %i.14 131 17 18 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_test:
+        %tmp.244 = lgetv %i.14;
+        symbol [ i %tmp.244 131 39 40 ];
+        %tmp.245 = 0;
+        %tmp.246 = gte %tmp.244 %tmp.245;
+        bf %tmp.246 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_begin:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 132 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %p.15 = local;
+        symbol [ p %p.15 132 16 17 ];
+        %tmp.247 = lgetv %peaks.10;
+        symbol [ peaks %tmp.247 132 20 25 ];
+        %tmp.248 = lgetv %i.14;
+        symbol [ i %tmp.248 132 26 27 ];
+        %tmp.249 = agetv %tmp.247 %tmp.248;
+        lputv %p.15 %tmp.249;
+        symbol [ p %p.15 132 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 133 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %a.16 = local;
+        symbol [ a %a.16 133 16 17 ];
+        symbol [ Math %tmp.250 133 20 24 ];
+        %tmp.250 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.251 133 25 34 ];
+        %tmp.251 = getv function %tmp.250 :toRadians;
+        %tmp.252 = lgetv %p.15;
+        symbol [ p %tmp.252 133 35 36 ];
+        symbol [ brg %tmp.253 133 37 40 ];
+        %tmp.253 = getv %tmp.252 :brg;
+        %tmp.254 = lgetv %rot.9;
+        symbol [ rot %tmp.254 133 43 46 ];
+        %tmp.255 = sub %tmp.253 %tmp.254;
+        %tmp.256 = invoke %tmp.250 %tmp.251(%tmp.255);
+        lputv %a.16 %tmp.256;
+        symbol [ a %a.16 133 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 134 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %f.17 = local;
+        symbol [ f %f.17 134 16 17 ];
+        %tmp.257 = lgetv %p.15;
+        symbol [ p %tmp.257 134 20 21 ];
+        symbol [ dist %tmp.258 134 22 26 ];
+        %tmp.258 = getv %tmp.257 :dist;
+        %tmp.259 = lgetv %radius.12;
+        symbol [ radius %tmp.259 134 29 35 ];
+        %tmp.260 = div %tmp.258 %tmp.259;
+        lputv %f.17 %tmp.260;
+        symbol [ f %f.17 134 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 135 12 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_12_137_12_if_stmt:
+        %tmp.261 = lgetv %f.17;
+        symbol [ f %tmp.261 135 16 17 ];
+        %tmp.262 = 1.0f;
+        %tmp.263 = gt %tmp.261 %tmp.262;
+        bf %tmp.263 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_12_137_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_12_137_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_26_137_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 136 16 ]
+        %tmp.264 = 1.0f;
+        lputv %f.17 %tmp.264;
+        symbol [ f %f.17 136 16 17 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_26_137_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_12_137_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_135_12_137_12_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 138 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %rr.18 = local;
+        symbol [ rr %rr.18 138 16 18 ];
+        %tmp.265 = lgetv %rIn.7;
+        symbol [ rIn %tmp.265 138 21 24 ];
+        %tmp.266 = 8;
+        %tmp.267 = add %tmp.265 %tmp.266;
+        %tmp.268 = lgetv %span.13;
+        symbol [ span %tmp.268 138 31 35 ];
+        %tmp.269 = lgetv %f.17;
+        symbol [ f %tmp.269 138 38 39 ];
+        %tmp.270 = mul %tmp.268 %tmp.269;
+        %tmp.271 = add %tmp.267 %tmp.270;
+        lputv %rr.18 %tmp.271;
+        symbol [ rr %rr.18 138 16 18 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 139 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %x.19 = local;
+        symbol [ x %x.19 139 16 17 ];
+        %tmp.272 = lgetv %cx.4;
+        symbol [ cx %tmp.272 139 21 23 ];
+        %tmp.273 = lgetv %rr.18;
+        symbol [ rr %tmp.273 139 26 28 ];
+        symbol [ Math %tmp.274 139 31 35 ];
+        %tmp.274 = getm $.Toybox.Math;
+        symbol [ sin %tmp.275 139 36 39 ];
+        %tmp.275 = getv function %tmp.274 :sin;
+        %tmp.276 = lgetv %a.16;
+        symbol [ a %tmp.276 139 40 41 ];
+        %tmp.277 = invoke %tmp.274 %tmp.275(%tmp.276);
+        %tmp.278 = mul %tmp.273 %tmp.277;
+        %tmp.279 = add %tmp.272 %tmp.278;
+        symbol [ toNumber %tmp.280 139 44 52 ];
+        %tmp.280 = getv function %tmp.279 :toNumber;
+        %tmp.281 = invoke %tmp.279 %tmp.280();
+        lputv %x.19 %tmp.281;
+        symbol [ x %x.19 139 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 140 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %y.20 = local;
+        symbol [ y %y.20 140 16 17 ];
+        %tmp.282 = lgetv %cy.5;
+        symbol [ cy %tmp.282 140 21 23 ];
+        %tmp.283 = lgetv %rr.18;
+        symbol [ rr %tmp.283 140 26 28 ];
+        symbol [ Math %tmp.284 140 31 35 ];
+        %tmp.284 = getm $.Toybox.Math;
+        symbol [ cos %tmp.285 140 36 39 ];
+        %tmp.285 = getv function %tmp.284 :cos;
+        %tmp.286 = lgetv %a.16;
+        symbol [ a %tmp.286 140 40 41 ];
+        %tmp.287 = invoke %tmp.284 %tmp.285(%tmp.286);
+        %tmp.288 = mul %tmp.283 %tmp.287;
+        %tmp.289 = sub %tmp.282 %tmp.288;
+        symbol [ toNumber %tmp.290 140 44 52 ];
+        %tmp.290 = getv function %tmp.289 :toNumber;
+        %tmp.291 = invoke %tmp.289 %tmp.290();
+        lputv %y.20 %tmp.291;
+        symbol [ y %y.20 140 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 141 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop" ]
+        %size.21 = local;
+        symbol [ size %size.21 141 16 20 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_begin:
+        %tmp.292 = lgetv %p.15;
+        symbol [ p %tmp.292 141 23 24 ];
+        symbol [ prom %tmp.293 141 25 29 ];
+        %tmp.293 = getv %tmp.292 :prom;
+        %tmp.294 = 1000;
+        %tmp.295 = gte %tmp.293 %tmp.294;
+        bf %tmp.295 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_true:
+        %tmp.296 = 5;
+        push %tmp.296;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_else_false:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_begin:
+        %tmp.297 = lgetv %p.15;
+        symbol [ p %tmp.297 141 45 46 ];
+        symbol [ prom %tmp.298 141 47 51 ];
+        %tmp.298 = getv %tmp.297 :prom;
+        %tmp.299 = 500;
+        %tmp.300 = gte %tmp.298 %tmp.299;
+        bf %tmp.300 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_true:
+        %tmp.301 = 4;
+        push %tmp.301;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_else_false:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_begin:
+        %tmp.302 = lgetv %p.15;
+        symbol [ p %tmp.302 141 66 67 ];
+        symbol [ prom %tmp.303 141 68 72 ];
+        %tmp.303 = getv %tmp.302 :prom;
+        %tmp.304 = 300;
+        %tmp.305 = gte %tmp.303 %tmp.304;
+        bf %tmp.305 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_true:
+        %tmp.306 = 3;
+        push %tmp.306;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_else_false:
+        %tmp.307 = 2;
+        push %tmp.307;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_end:
+        %tmp.308 = phi [%tmp.305 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_begin] [%tmp.306 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_true] [%tmp.307 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_else_false] [%tmp.308 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_66_141_86_end];
+        push %tmp.308;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_end:
+        %tmp.309 = phi [%tmp.300 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_begin] [%tmp.301 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_true] [%tmp.308 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_else_false] [%tmp.309 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_45_141_87_end];
+        push %tmp.309;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_end:
+        %tmp.310 = phi [%tmp.295 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_begin] [%tmp.296 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_true] [%tmp.309 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_else_false] [%tmp.310 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_141_23_141_88_end];
+        lputv %size.21 %tmp.310;
+        symbol [ size %size.21 141 16 20 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 142 12 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_stmt:
+        %tmp.311 = lgetv %p.15;
+        symbol [ p %tmp.311 142 16 17 ];
+        %tmp.312 = lgetv %sel.11;
+        symbol [ sel %tmp.312 142 21 24 ];
+        %tmp.313 = eq %tmp.311 %tmp.312;
+        bf %tmp.313 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_26_148_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 143 16 ]
+        %tmp.314 = lgetv %dc;
+        symbol [ dc %tmp.314 143 16 18 ];
+        symbol [ setColor %tmp.315 143 19 27 ];
+        %tmp.315 = getv function %tmp.314 :setColor;
+        symbol [ Graphics %tmp.316 143 28 36 ];
+        %tmp.316 = getm $.Toybox.Graphics;
+        symbol [ COLOR_ORANGE %tmp.317 143 37 49 ];
+        %tmp.317 = getv %tmp.316 :COLOR_ORANGE;
+        symbol [ Graphics %tmp.318 143 51 59 ];
+        %tmp.318 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.319 143 60 77 ];
+        %tmp.319 = getv %tmp.318 :COLOR_TRANSPARENT;
+        invoke %tmp.314 %tmp.315(%tmp.317, %tmp.319);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 144 16 ]
+        %tmp.320 = lgetv %dc;
+        symbol [ dc %tmp.320 144 16 18 ];
+        symbol [ setPenWidth %tmp.321 144 19 30 ];
+        %tmp.321 = getv function %tmp.320 :setPenWidth;
+        %tmp.322 = 2;
+        invoke %tmp.320 %tmp.321(%tmp.322);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 145 16 ]
+        %tmp.323 = lgetv %dc;
+        symbol [ dc %tmp.323 145 16 18 ];
+        symbol [ drawLine %tmp.324 145 19 27 ];
+        %tmp.324 = getv function %tmp.323 :drawLine;
+        %tmp.325 = lgetv %cx.4;
+        symbol [ cx %tmp.325 145 29 31 ];
+        %tmp.326 = lgetv %rIn.7;
+        symbol [ rIn %tmp.326 145 34 37 ];
+        symbol [ Math %tmp.327 145 40 44 ];
+        %tmp.327 = getm $.Toybox.Math;
+        symbol [ sin %tmp.328 145 45 48 ];
+        %tmp.328 = getv function %tmp.327 :sin;
+        %tmp.329 = lgetv %a.16;
+        symbol [ a %tmp.329 145 49 50 ];
+        %tmp.330 = invoke %tmp.327 %tmp.328(%tmp.329);
+        %tmp.331 = mul %tmp.326 %tmp.330;
+        %tmp.332 = add %tmp.325 %tmp.331;
+        symbol [ toNumber %tmp.333 145 53 61 ];
+        %tmp.333 = getv function %tmp.332 :toNumber;
+        %tmp.334 = invoke %tmp.332 %tmp.333();
+        %tmp.335 = lgetv %cy.5;
+        symbol [ cy %tmp.335 145 66 68 ];
+        %tmp.336 = lgetv %rIn.7;
+        symbol [ rIn %tmp.336 145 71 74 ];
+        symbol [ Math %tmp.337 145 77 81 ];
+        %tmp.337 = getm $.Toybox.Math;
+        symbol [ cos %tmp.338 145 82 85 ];
+        %tmp.338 = getv function %tmp.337 :cos;
+        %tmp.339 = lgetv %a.16;
+        symbol [ a %tmp.339 145 86 87 ];
+        %tmp.340 = invoke %tmp.337 %tmp.338(%tmp.339);
+        %tmp.341 = mul %tmp.336 %tmp.340;
+        %tmp.342 = sub %tmp.335 %tmp.341;
+        symbol [ toNumber %tmp.343 145 90 98 ];
+        %tmp.343 = getv function %tmp.342 :toNumber;
+        %tmp.344 = invoke %tmp.342 %tmp.343();
+        %tmp.345 = lgetv %x.19;
+        symbol [ x %tmp.345 145 102 103 ];
+        %tmp.346 = lgetv %y.20;
+        symbol [ y %tmp.346 145 105 106 ];
+        invoke %tmp.323 %tmp.324(%tmp.334, %tmp.344, %tmp.345, %tmp.346);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 146 16 ]
+        %tmp.347 = lgetv %dc;
+        symbol [ dc %tmp.347 146 16 18 ];
+        symbol [ fillCircle %tmp.348 146 19 29 ];
+        %tmp.348 = getv function %tmp.347 :fillCircle;
+        %tmp.349 = lgetv %x.19;
+        symbol [ x %tmp.349 146 30 31 ];
+        %tmp.350 = lgetv %y.20;
+        symbol [ y %tmp.350 146 33 34 ];
+        %tmp.351 = lgetv %size.21;
+        symbol [ size %tmp.351 146 36 40 ];
+        %tmp.352 = 2;
+        %tmp.353 = add %tmp.351 %tmp.352;
+        invoke %tmp.347 %tmp.348(%tmp.349, %tmp.350, %tmp.353);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 147 16 ]
+        %tmp.354 = lgetv %dc;
+        symbol [ dc %tmp.354 147 16 18 ];
+        symbol [ setPenWidth %tmp.355 147 19 30 ];
+        %tmp.355 = getv function %tmp.354 :setPenWidth;
+        %tmp.356 = 1;
+        invoke %tmp.354 %tmp.355(%tmp.356);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_26_148_12_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_else_false:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_148_19_151_12_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 149 16 ]
+        %tmp.357 = lgetv %dc;
+        symbol [ dc %tmp.357 149 16 18 ];
+        symbol [ setColor %tmp.358 149 19 27 ];
+        %tmp.358 = getv function %tmp.357 :setColor;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_begin:
+        %tmp.359 = lgetv %p.15;
+        symbol [ p %tmp.359 149 28 29 ];
+        symbol [ prom %tmp.360 149 30 34 ];
+        %tmp.360 = getv %tmp.359 :prom;
+        %tmp.361 = 500;
+        %tmp.362 = gte %tmp.360 %tmp.361;
+        bf %tmp.362 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_true:
+        symbol [ Graphics %tmp.363 149 44 52 ];
+        %tmp.363 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.364 149 53 64 ];
+        %tmp.364 = getv %tmp.363 :COLOR_WHITE;
+        push %tmp.364;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_else_false:
+        symbol [ Graphics %tmp.365 149 67 75 ];
+        %tmp.365 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.366 149 76 89 ];
+        %tmp.366 = getv %tmp.365 :COLOR_LT_GRAY;
+        push %tmp.366;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_end:
+        %tmp.367 = phi [%tmp.362 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_begin] [%tmp.364 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_true] [%tmp.366 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_else_false] [%tmp.367 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_149_28_149_76_end];
+        symbol [ Graphics %tmp.368 149 91 99 ];
+        %tmp.368 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.369 149 100 117 ];
+        %tmp.369 = getv %tmp.368 :COLOR_TRANSPARENT;
+        invoke %tmp.357 %tmp.358(%tmp.367, %tmp.369);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 150 16 ]
+        %tmp.370 = lgetv %dc;
+        symbol [ dc %tmp.370 150 16 18 ];
+        symbol [ fillCircle %tmp.371 150 19 29 ];
+        %tmp.371 = getv function %tmp.370 :fillCircle;
+        %tmp.372 = lgetv %x.19;
+        symbol [ x %tmp.372 150 30 31 ];
+        %tmp.373 = lgetv %y.20;
+        symbol [ y %tmp.373 150 33 34 ];
+        %tmp.374 = lgetv %size.21;
+        symbol [ size %tmp.374 150 36 40 ];
+        invoke %tmp.370 %tmp.371(%tmp.372, %tmp.373, %tmp.374);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_148_19_151_12_stop:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_142_12_151_12_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_52_152_8_stop:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_incr:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 131 ]
+        %tmp.377 = lgetv %i.14;
+        symbol [ i %tmp.377 131 47 48 ];
+        %tmp.378 = sub %tmp.377 1;
+        lputv %i.14 %tmp.378;
+        symbol [ i %i.14 131 47 48 ];
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_test;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_131_8_152_8_for_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 155 8 ]
+        %tmp.379 = self;
+        symbol [ drawGps %tmp.380 155 8 15 ];
+        %tmp.380 = getv function %tmp.379 :drawGps;
+        %tmp.381 = lgetv %dc;
+        symbol [ dc %tmp.381 155 16 18 ];
+        %tmp.382 = lgetv %cx.4;
+        symbol [ cx %tmp.382 155 20 22 ];
+        %tmp.383 = lgetv %cy.5;
+        symbol [ cy %tmp.383 155 24 26 ];
+        %tmp.384 = lgetv %rIn.7;
+        symbol [ rIn %tmp.384 155 29 32 ];
+        %tmp.385 = sub %tmp.383 %tmp.384;
+        %tmp.386 = 12;
+        %tmp.387 = add %tmp.385 %tmp.386;
+        %tmp.388 = lgetv %m.1;
+        symbol [ m %tmp.388 155 39 40 ];
+        symbol [ quality %tmp.389 155 41 48 ];
+        %tmp.389 = getv %tmp.388 :quality;
+        invoke %tmp.379 %tmp.380(%tmp.381, %tmp.382, %tmp.387, %tmp.389);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 156 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_8_167_8_if_stmt:
+        %tmp.390 = lgetv %sel.11;
+        symbol [ sel %tmp.390 156 12 15 ];
+        %tmp.391 = null;
+        %tmp.392 = ne %tmp.390 %tmp.391;
+        bf %tmp.392 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_8_167_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_8_167_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 157 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_stop" ]
+        %ang.22 = local;
+        symbol [ ang %ang.22 157 16 19 ];
+        symbol [ Geo %tmp.394 157 22 25 ];
+        %tmp.394 = getv ? :Geo;
+        symbol [ elevationAngleDeg %tmp.395 157 26 43 ];
+        %tmp.395 = getv function %tmp.394 :elevationAngleDeg;
+        %tmp.396 = lgetv %sel.11;
+        symbol [ sel %tmp.396 157 44 47 ];
+        %tmp.397 = as %tmp.396 { (!Null) };
+        symbol [ elev %tmp.398 157 48 52 ];
+        %tmp.398 = getv %tmp.397 :elev;
+        %tmp.399 = lgetv %m.1;
+        symbol [ m %tmp.399 157 54 55 ];
+        symbol [ alt %tmp.400 157 56 59 ];
+        %tmp.400 = getv %tmp.399 :alt;
+        %tmp.401 = lgetv %sel.11;
+        symbol [ sel %tmp.401 157 61 64 ];
+        %tmp.402 = as %tmp.401 { (!Null) };
+        symbol [ dist %tmp.403 157 65 69 ];
+        %tmp.403 = getv %tmp.402 :dist;
+        %tmp.404 = invoke %tmp.394 %tmp.395(%tmp.398, %tmp.400, %tmp.403);
+        lputv %ang.22 %tmp.404;
+        symbol [ ang %ang.22 157 16 19 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 158 12 ]
+        %tmp.405 = lgetv %dc;
+        symbol [ dc %tmp.405 158 12 14 ];
+        symbol [ setColor %tmp.406 158 15 23 ];
+        %tmp.406 = getv function %tmp.405 :setColor;
+        symbol [ Graphics %tmp.407 158 24 32 ];
+        %tmp.407 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.408 158 33 46 ];
+        %tmp.408 = getv %tmp.407 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.409 158 48 56 ];
+        %tmp.409 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.410 158 57 74 ];
+        %tmp.410 = getv %tmp.409 :COLOR_TRANSPARENT;
+        invoke %tmp.405 %tmp.406(%tmp.408, %tmp.410);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 159 12 ]
+        %tmp.411 = lgetv %dc;
+        symbol [ dc %tmp.411 159 12 14 ];
+        symbol [ drawText %tmp.412 159 15 23 ];
+        %tmp.412 = getv function %tmp.411 :drawText;
+        %tmp.413 = lgetv %cx.4;
+        symbol [ cx %tmp.413 159 24 26 ];
+        %tmp.414 = lgetv %cy.5;
+        symbol [ cy %tmp.414 159 28 30 ];
+        %tmp.415 = 36;
+        %tmp.416 = sub %tmp.414 %tmp.415;
+        symbol [ Graphics %tmp.417 159 37 45 ];
+        %tmp.417 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.418 159 46 56 ];
+        %tmp.418 = getv %tmp.417 :FONT_XTINY;
+        symbol [ Ui %tmp.420 159 58 60 ];
+        %tmp.420 = getv ? :Ui;
+        symbol [ angleText %tmp.421 159 61 70 ];
+        %tmp.421 = getv function %tmp.420 :angleText;
+        %tmp.422 = lgetv %ang.22;
+        symbol [ ang %tmp.422 159 71 74 ];
+        %tmp.423 = invoke %tmp.420 %tmp.421(%tmp.422);
+        symbol [ Ui %tmp.425 159 77 79 ];
+        %tmp.425 = getv ? :Ui;
+        symbol [ CENTER %tmp.426 159 80 86 ];
+        %tmp.426 = getv %tmp.425 :CENTER;
+        invoke %tmp.411 %tmp.412(%tmp.413, %tmp.416, %tmp.418, %tmp.423, %tmp.426);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 160 12 ]
+        %tmp.427 = lgetv %dc;
+        symbol [ dc %tmp.427 160 12 14 ];
+        symbol [ setColor %tmp.428 160 15 23 ];
+        %tmp.428 = getv function %tmp.427 :setColor;
+        symbol [ Graphics %tmp.429 160 24 32 ];
+        %tmp.429 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.430 160 33 44 ];
+        %tmp.430 = getv %tmp.429 :COLOR_WHITE;
+        symbol [ Graphics %tmp.431 160 46 54 ];
+        %tmp.431 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.432 160 55 72 ];
+        %tmp.432 = getv %tmp.431 :COLOR_TRANSPARENT;
+        invoke %tmp.427 %tmp.428(%tmp.430, %tmp.432);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 161 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_stop" ]
+        %maxW.23 = local;
+        symbol [ maxW %maxW.23 161 16 20 ];
+        %tmp.433 = 2;
+        symbol [ Math %tmp.434 161 28 32 ];
+        %tmp.434 = getm $.Toybox.Math;
+        symbol [ sqrt %tmp.435 161 33 37 ];
+        %tmp.435 = getv function %tmp.434 :sqrt;
+        %tmp.436 = lgetv %rIn.7;
+        symbol [ rIn %tmp.436 161 38 41 ];
+        %tmp.437 = lgetv %rIn.7;
+        symbol [ rIn %tmp.437 161 44 47 ];
+        %tmp.438 = mul %tmp.436 %tmp.437;
+        %tmp.439 = 13;
+        %tmp.440 = 13;
+        %tmp.441 = mul %tmp.439 %tmp.440;
+        %tmp.442 = sub %tmp.438 %tmp.441;
+        %tmp.443 = invoke %tmp.434 %tmp.435(%tmp.442);
+        %tmp.444 = mul %tmp.433 %tmp.443;
+        symbol [ toNumber %tmp.445 161 60 68 ];
+        %tmp.445 = getv function %tmp.444 :toNumber;
+        %tmp.446 = invoke %tmp.444 %tmp.445();
+        %tmp.447 = 8;
+        %tmp.448 = sub %tmp.446 %tmp.447;
+        lputv %maxW.23 %tmp.448;
+        symbol [ maxW %maxW.23 161 16 20 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 162 12 ]
+        symbol [ Ui %tmp.450 162 12 14 ];
+        %tmp.450 = getv ? :Ui;
+        symbol [ drawFitted %tmp.451 162 15 25 ];
+        %tmp.451 = getv function %tmp.450 :drawFitted;
+        %tmp.452 = lgetv %dc;
+        symbol [ dc %tmp.452 162 26 28 ];
+        %tmp.453 = lgetv %cx.4;
+        symbol [ cx %tmp.453 162 30 32 ];
+        %tmp.454 = lgetv %cy.5;
+        symbol [ cy %tmp.454 162 34 36 ];
+        %tmp.455 = 12;
+        %tmp.456 = sub %tmp.454 %tmp.455;
+        %tmp.457 = lgetv %sel.11;
+        symbol [ sel %tmp.457 162 43 46 ];
+        %tmp.458 = as %tmp.457 { (!Null) };
+        symbol [ name %tmp.459 162 47 51 ];
+        %tmp.459 = getv %tmp.458 :name;
+        %tmp.460 = lgetv %maxW.23;
+        symbol [ maxW %tmp.460 162 53 57 ];
+        invoke %tmp.450 %tmp.451(%tmp.452, %tmp.453, %tmp.456, %tmp.459, %tmp.460);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 163 12 ]
+        %tmp.461 = lgetv %dc;
+        symbol [ dc %tmp.461 163 12 14 ];
+        symbol [ drawText %tmp.462 163 15 23 ];
+        %tmp.462 = getv function %tmp.461 :drawText;
+        %tmp.463 = lgetv %cx.4;
+        symbol [ cx %tmp.463 163 24 26 ];
+        %tmp.464 = lgetv %cy.5;
+        symbol [ cy %tmp.464 163 28 30 ];
+        %tmp.465 = 14;
+        %tmp.466 = add %tmp.464 %tmp.465;
+        symbol [ Graphics %tmp.467 163 37 45 ];
+        %tmp.467 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.468 163 46 55 ];
+        %tmp.468 = getv %tmp.467 :FONT_TINY;
+        %tmp.469 = lgetv %sel.11;
+        symbol [ sel %tmp.469 163 57 60 ];
+        %tmp.470 = as %tmp.469 { (!Null) };
+        symbol [ elev %tmp.471 163 61 65 ];
+        %tmp.471 = getv %tmp.470 :elev;
+        symbol [ toString %tmp.472 163 66 74 ];
+        %tmp.472 = getv function %tmp.471 :toString;
+        %tmp.473 = invoke %tmp.471 %tmp.472();
+        %tmp.474 = " m";
+        %tmp.475 = add %tmp.473 %tmp.474;
+        symbol [ Ui %tmp.477 163 85 87 ];
+        %tmp.477 = getv ? :Ui;
+        symbol [ CENTER %tmp.478 163 88 94 ];
+        %tmp.478 = getv %tmp.477 :CENTER;
+        invoke %tmp.461 %tmp.462(%tmp.463, %tmp.466, %tmp.468, %tmp.475, %tmp.478);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 164 12 ]
+        %tmp.479 = lgetv %dc;
+        symbol [ dc %tmp.479 164 12 14 ];
+        symbol [ setColor %tmp.480 164 15 23 ];
+        %tmp.480 = getv function %tmp.479 :setColor;
+        symbol [ Graphics %tmp.481 164 24 32 ];
+        %tmp.481 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.482 164 33 46 ];
+        %tmp.482 = getv %tmp.481 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.483 164 48 56 ];
+        %tmp.483 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.484 164 57 74 ];
+        %tmp.484 = getv %tmp.483 :COLOR_TRANSPARENT;
+        invoke %tmp.479 %tmp.480(%tmp.482, %tmp.484);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 165 12 ]
+        %tmp.485 = lgetv %dc;
+        symbol [ dc %tmp.485 165 12 14 ];
+        symbol [ drawText %tmp.486 165 15 23 ];
+        %tmp.486 = getv function %tmp.485 :drawText;
+        %tmp.487 = lgetv %cx.4;
+        symbol [ cx %tmp.487 165 24 26 ];
+        %tmp.488 = lgetv %cy.5;
+        symbol [ cy %tmp.488 165 28 30 ];
+        %tmp.489 = 38;
+        %tmp.490 = add %tmp.488 %tmp.489;
+        symbol [ Graphics %tmp.491 165 37 45 ];
+        %tmp.491 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.492 165 46 56 ];
+        %tmp.492 = getv %tmp.491 :FONT_XTINY;
+        symbol [ Geo %tmp.494 166 16 19 ];
+        %tmp.494 = getv ? :Geo;
+        symbol [ formatKm %tmp.495 166 20 28 ];
+        %tmp.495 = getv function %tmp.494 :formatKm;
+        %tmp.496 = lgetv %sel.11;
+        symbol [ sel %tmp.496 166 29 32 ];
+        %tmp.497 = as %tmp.496 { (!Null) };
+        symbol [ dist %tmp.498 166 33 37 ];
+        %tmp.498 = getv %tmp.497 :dist;
+        %tmp.499 = invoke %tmp.494 %tmp.495(%tmp.498);
+        %tmp.500 = " ";
+        %tmp.501 = add %tmp.499 %tmp.500;
+        symbol [ Geo %tmp.503 166 47 50 ];
+        %tmp.503 = getv ? :Geo;
+        symbol [ cardinal %tmp.504 166 51 59 ];
+        %tmp.504 = getv function %tmp.503 :cardinal;
+        %tmp.505 = lgetv %sel.11;
+        symbol [ sel %tmp.505 166 60 63 ];
+        %tmp.506 = as %tmp.505 { (!Null) };
+        symbol [ brg %tmp.507 166 64 67 ];
+        %tmp.507 = getv %tmp.506 :brg;
+        %tmp.508 = invoke %tmp.503 %tmp.504(%tmp.507);
+        %tmp.509 = add %tmp.501 %tmp.508;
+        symbol [ Ui %tmp.511 166 70 72 ];
+        %tmp.511 = getv ? :Ui;
+        symbol [ CENTER %tmp.512 166 73 79 ];
+        %tmp.512 = getv %tmp.511 :CENTER;
+        invoke %tmp.485 %tmp.486(%tmp.487, %tmp.490, %tmp.492, %tmp.509, %tmp.512);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_25_167_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_8_167_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_156_8_167_8_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_70_40_168_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 170; @symbol_functiondef = [drawRing,170,21,29]; @symbol_param<0> = [dc,170,30,32]; @symbol_param<0>_type<0> = [Dc,170,36,38]; @symbol_param<1> = [cx,170,40,42]; @symbol_param<1>_type<0> = [Number,170,46,52]; @symbol_param<2> = [cy,170,54,56]; @symbol_param<2>_type<0> = [Number,170,60,66]; @symbol_param<3> = [rOut,170,68,72]; @symbol_param<3>_type<0> = [Number,170,76,82]; @symbol_param<4> = [rIn,170,84,87]; @symbol_param<4>_type<0> = [Number,170,91,97]; @symbol_param<5> = [rot,171,30,33]; @symbol_param<5>_type<0> = [Float,171,37,42]; @symbol_param<6> = [hasCompass,171,44,54]; @symbol_param<6>_type<0> = [Boolean,171,58,65]; ]
+    private
+    function drawRing(dc as Dc, cx as Number, cy as Number, rOut as Number, rIn as Number, rot as Float, hasCompass as Boolean) as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 172 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 172 8 10 ];
+        symbol [ setColor %tmp.2 172 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 172 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.4 172 29 42 ];
+        %tmp.4 = getv %tmp.3 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.5 172 44 52 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 172 53 70 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 173 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 173 8 10 ];
+        symbol [ drawCircle %tmp.8 173 11 21 ];
+        %tmp.8 = getv function %tmp.7 :drawCircle;
+        %tmp.9 = lgetv %cx;
+        symbol [ cx %tmp.9 173 22 24 ];
+        %tmp.10 = lgetv %cy;
+        symbol [ cy %tmp.10 173 26 28 ];
+        %tmp.11 = lgetv %rIn;
+        symbol [ rIn %tmp.11 173 30 33 ];
+        invoke %tmp.7 %tmp.8(%tmp.9, %tmp.10, %tmp.11);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 174 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 174 8 10 ];
+        symbol [ drawCircle %tmp.13 174 11 21 ];
+        %tmp.13 = getv function %tmp.12 :drawCircle;
+        %tmp.14 = lgetv %cx;
+        symbol [ cx %tmp.14 174 22 24 ];
+        %tmp.15 = lgetv %cy;
+        symbol [ cy %tmp.15 174 26 28 ];
+        %tmp.16 = lgetv %rIn;
+        symbol [ rIn %tmp.16 174 31 34 ];
+        %tmp.17 = lgetv %rOut;
+        symbol [ rOut %tmp.17 174 37 41 ];
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.19 = 10;
+        %tmp.20 = sub %tmp.18 %tmp.19;
+        %tmp.21 = 2;
+        %tmp.22 = div %tmp.20 %tmp.21;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.22);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 177 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_stop" ]
+        %labels.1 = local;
+        symbol [ labels %labels.1 177 12 18 ];
+        %tmp.23 = newa 4;
+        %tmp.24 = "N";
+        %tmp.25 = dup %tmp.23;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.27 = "E";
+        %tmp.28 = dup %tmp.26;
+        %tmp.29 = aputv %tmp.28 1 %tmp.27;
+        %tmp.30 = "S";
+        %tmp.31 = dup %tmp.29;
+        %tmp.32 = aputv %tmp.31 2 %tmp.30;
+        %tmp.33 = "W";
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 3 %tmp.33;
+        lputv %labels.1 %tmp.35;
+        symbol [ labels %labels.1 177 12 18 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 178 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_stop" ]
+        %rl.2 = local;
+        symbol [ rl %rl.2 178 12 14 ];
+        %tmp.36 = lgetv %rOut;
+        symbol [ rOut %tmp.36 178 17 21 ];
+        %tmp.37 = 10;
+        %tmp.38 = sub %tmp.36 %tmp.37;
+        lputv %rl.2 %tmp.38;
+        symbol [ rl %rl.2 178 12 14 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 179 8 ]
+        for @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_test @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_incr @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_init:
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_begin" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 179 17 18 ];
+        %tmp.39 = 0;
+        lputv %i.3 %tmp.39;
+        symbol [ i %i.3 179 17 18 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_test:
+        %tmp.40 = lgetv %i.3;
+        symbol [ i %tmp.40 179 24 25 ];
+        %tmp.41 = 4;
+        %tmp.42 = lt %tmp.40 %tmp.41;
+        bf %tmp.42 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_begin:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_36_184_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 180 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_36_184_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_36_184_8_stop" ]
+        %a.4 = local;
+        symbol [ a %a.4 180 16 17 ];
+        symbol [ Math %tmp.43 180 20 24 ];
+        %tmp.43 = getm $.Toybox.Math;
+        symbol [ toRadians %tmp.44 180 25 34 ];
+        %tmp.44 = getv function %tmp.43 :toRadians;
+        %tmp.45 = lgetv %i.3;
+        symbol [ i %tmp.45 180 35 36 ];
+        %tmp.46 = 90;
+        %tmp.47 = mul %tmp.45 %tmp.46;
+        %tmp.48 = lgetv %rot;
+        symbol [ rot %tmp.48 180 44 47 ];
+        %tmp.49 = sub %tmp.47 %tmp.48;
+        %tmp.50 = invoke %tmp.43 %tmp.44(%tmp.49);
+        lputv %a.4 %tmp.50;
+        symbol [ a %a.4 180 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 181 12 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 181 12 14 ];
+        symbol [ setColor %tmp.52 181 15 23 ];
+        %tmp.52 = getv function %tmp.51 :setColor;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_begin:
+        %tmp.53 = lgetv %i.3;
+        symbol [ i %tmp.53 181 24 25 ];
+        %tmp.54 = 0;
+        %tmp.55 = eq %tmp.53 %tmp.54;
+        bf %tmp.55 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_true:
+        symbol [ Graphics %tmp.56 181 33 41 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.57 181 42 51 ];
+        %tmp.57 = getv %tmp.56 :COLOR_RED;
+        push %tmp.57;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_else_false:
+        symbol [ Graphics %tmp.58 181 54 62 ];
+        %tmp.58 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.59 181 63 76 ];
+        %tmp.59 = getv %tmp.58 :COLOR_LT_GRAY;
+        push %tmp.59;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_end:
+        %tmp.60 = phi [%tmp.55 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_begin] [%tmp.57 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_true] [%tmp.59 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_else_false] [%tmp.60 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_181_24_181_63_end];
+        symbol [ Graphics %tmp.61 181 78 86 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.62 181 87 104 ];
+        %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+        invoke %tmp.51 %tmp.52(%tmp.60, %tmp.62);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 182 12 ]
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 182 12 14 ];
+        symbol [ drawText %tmp.64 182 15 23 ];
+        %tmp.64 = getv function %tmp.63 :drawText;
+        %tmp.65 = lgetv %cx;
+        symbol [ cx %tmp.65 182 25 27 ];
+        %tmp.66 = lgetv %rl.2;
+        symbol [ rl %tmp.66 182 30 32 ];
+        symbol [ Math %tmp.67 182 35 39 ];
+        %tmp.67 = getm $.Toybox.Math;
+        symbol [ sin %tmp.68 182 40 43 ];
+        %tmp.68 = getv function %tmp.67 :sin;
+        %tmp.69 = lgetv %a.4;
+        symbol [ a %tmp.69 182 44 45 ];
+        %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
+        %tmp.71 = mul %tmp.66 %tmp.70;
+        %tmp.72 = add %tmp.65 %tmp.71;
+        symbol [ toNumber %tmp.73 182 48 56 ];
+        %tmp.73 = getv function %tmp.72 :toNumber;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        %tmp.75 = lgetv %cy;
+        symbol [ cy %tmp.75 182 61 63 ];
+        %tmp.76 = lgetv %rl.2;
+        symbol [ rl %tmp.76 182 66 68 ];
+        symbol [ Math %tmp.77 182 71 75 ];
+        %tmp.77 = getm $.Toybox.Math;
+        symbol [ cos %tmp.78 182 76 79 ];
+        %tmp.78 = getv function %tmp.77 :cos;
+        %tmp.79 = lgetv %a.4;
+        symbol [ a %tmp.79 182 80 81 ];
+        %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+        %tmp.81 = mul %tmp.76 %tmp.80;
+        %tmp.82 = sub %tmp.75 %tmp.81;
+        symbol [ toNumber %tmp.83 182 84 92 ];
+        %tmp.83 = getv function %tmp.82 :toNumber;
+        %tmp.84 = invoke %tmp.82 %tmp.83();
+        symbol [ Graphics %tmp.85 183 16 24 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.86 183 25 35 ];
+        %tmp.86 = getv %tmp.85 :FONT_XTINY;
+        %tmp.87 = lgetv %labels.1;
+        symbol [ labels %tmp.87 183 37 43 ];
+        %tmp.88 = lgetv %i.3;
+        symbol [ i %tmp.88 183 44 45 ];
+        %tmp.89 = agetv %tmp.87 %tmp.88;
+        symbol [ Ui %tmp.91 183 48 50 ];
+        %tmp.91 = getv ? :Ui;
+        symbol [ CENTER %tmp.92 183 51 57 ];
+        %tmp.92 = getv %tmp.91 :CENTER;
+        invoke %tmp.63 %tmp.64(%tmp.74, %tmp.84, %tmp.86, %tmp.89, %tmp.92);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_36_184_8_stop:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_incr:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 179 ]
+        %tmp.95 = lgetv %i.3;
+        symbol [ i %tmp.95 179 31 32 ];
+        %tmp.96 = add %tmp.95 1;
+        lputv %i.3 %tmp.96;
+        symbol [ i %i.3 179 31 32 ];
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_test;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_179_8_184_8_for_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 187 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_8_191_8_if_stmt:
+        %tmp.97 = lgetv %hasCompass;
+        symbol [ hasCompass %tmp.97 187 12 22 ];
+        bf %tmp.97 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_8_191_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_8_191_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_24_191_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 188 12 ]
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 188 12 14 ];
+        symbol [ setColor %tmp.99 188 15 23 ];
+        %tmp.99 = getv function %tmp.98 :setColor;
+        symbol [ Graphics %tmp.100 188 24 32 ];
+        %tmp.100 = getm $.Toybox.Graphics;
+        symbol [ COLOR_ORANGE %tmp.101 188 33 45 ];
+        %tmp.101 = getv %tmp.100 :COLOR_ORANGE;
+        symbol [ Graphics %tmp.102 188 47 55 ];
+        %tmp.102 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.103 188 56 73 ];
+        %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+        invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 189 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_24_191_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_24_191_8_stop" ]
+        %top.5 = local;
+        symbol [ top %top.5 189 16 19 ];
+        %tmp.104 = lgetv %cy;
+        symbol [ cy %tmp.104 189 22 24 ];
+        %tmp.105 = lgetv %rOut;
+        symbol [ rOut %tmp.105 189 27 31 ];
+        %tmp.106 = sub %tmp.104 %tmp.105;
+        %tmp.107 = 20;
+        %tmp.108 = add %tmp.106 %tmp.107;
+        lputv %top.5 %tmp.108;
+        symbol [ top %top.5 189 16 19 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 190 12 ]
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 190 12 14 ];
+        symbol [ fillPolygon %tmp.110 190 15 26 ];
+        %tmp.110 = getv function %tmp.109 :fillPolygon;
+        %tmp.111 = newa 3;
+        %tmp.112 = newa 2;
+        %tmp.113 = lgetv %cx;
+        symbol [ cx %tmp.113 190 29 31 ];
+        %tmp.114 = dup %tmp.112;
+        %tmp.115 = aputv %tmp.114 0 %tmp.113;
+        %tmp.116 = lgetv %top.5;
+        symbol [ top %tmp.116 190 33 36 ];
+        %tmp.117 = 10;
+        %tmp.118 = add %tmp.116 %tmp.117;
+        %tmp.119 = dup %tmp.115;
+        %tmp.120 = aputv %tmp.119 1 %tmp.118;
+        %tmp.121 = dup %tmp.111;
+        %tmp.122 = aputv %tmp.121 0 %tmp.120;
+        %tmp.123 = newa 2;
+        %tmp.124 = lgetv %cx;
+        symbol [ cx %tmp.124 190 45 47 ];
+        %tmp.125 = 7;
+        %tmp.126 = sub %tmp.124 %tmp.125;
+        %tmp.127 = dup %tmp.123;
+        %tmp.128 = aputv %tmp.127 0 %tmp.126;
+        %tmp.129 = lgetv %top.5;
+        symbol [ top %tmp.129 190 53 56 ];
+        %tmp.130 = dup %tmp.128;
+        %tmp.131 = aputv %tmp.130 1 %tmp.129;
+        %tmp.132 = dup %tmp.122;
+        %tmp.133 = aputv %tmp.132 1 %tmp.131;
+        %tmp.134 = newa 2;
+        %tmp.135 = lgetv %cx;
+        symbol [ cx %tmp.135 190 60 62 ];
+        %tmp.136 = 7;
+        %tmp.137 = add %tmp.135 %tmp.136;
+        %tmp.138 = dup %tmp.134;
+        %tmp.139 = aputv %tmp.138 0 %tmp.137;
+        %tmp.140 = lgetv %top.5;
+        symbol [ top %tmp.140 190 68 71 ];
+        %tmp.141 = dup %tmp.139;
+        %tmp.142 = aputv %tmp.141 1 %tmp.140;
+        %tmp.143 = dup %tmp.133;
+        %tmp.144 = aputv %tmp.143 2 %tmp.142;
+        invoke %tmp.109 %tmp.110(%tmp.144);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_24_191_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_8_191_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_187_8_191_8_if_end:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_171_75_192_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 194; @symbol_functiondef = [drawGps,194,21,28]; @symbol_param<0> = [dc,194,29,31]; @symbol_param<0>_type<0> = [Dc,194,35,37]; @symbol_param<1> = [x,194,39,40]; @symbol_param<1>_type<0> = [Number,194,44,50]; @symbol_param<2> = [y,194,52,53]; @symbol_param<2>_type<0> = [Number,194,57,63]; @symbol_param<3> = [quality,194,65,72]; @symbol_param<3>_type<0> = [Number,194,76,82]; ]
+    private
+    function drawGps(dc as Dc, x as Number, y as Number, quality as Number) as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_194_92_197_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 195 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 195 8 10 ];
+        symbol [ setColor %tmp.2 195 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Ui %tmp.4 195 20 22 ];
+        %tmp.4 = getv ? :Ui;
+        symbol [ gpsColor %tmp.5 195 23 31 ];
+        %tmp.5 = getv function %tmp.4 :gpsColor;
+        %tmp.6 = lgetv %quality;
+        symbol [ quality %tmp.6 195 32 39 ];
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        symbol [ Graphics %tmp.8 195 42 50 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.9 195 51 68 ];
+        %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.7, %tmp.9);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 196 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 196 8 10 ];
+        symbol [ fillCircle %tmp.11 196 11 21 ];
+        %tmp.11 = getv function %tmp.10 :fillCircle;
+        %tmp.12 = lgetv %x;
+        symbol [ x %tmp.12 196 22 23 ];
+        %tmp.13 = lgetv %y;
+        symbol [ y %tmp.13 196 25 26 ];
+        %tmp.14 = 4;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.14);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_194_92_197_4_stop:
+    }
+}
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 200; @symbol_classdef = [RadarDelegate,200,6,19]; @symbol_extends<0> = [WatchUi,200,28,35]; @symbol_extends<1> = [BehaviorDelegate,200,36,52]; ]
+class RadarDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 200; ]
+    <init> {
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 200; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 201; @position = 16; @symbol_vardef = [_view,201,16,21]; @symbol_type<0> = [RadarView,201,25,34]; ]
+    private
+    var _view as RadarView;
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 203; @symbol_functiondef = [initialize,203,13,23]; @symbol_param<0> = [view,203,24,28]; @symbol_param<0>_type<0> = [RadarView,203,32,41]; ]
+    function initialize(view as RadarView) as Void {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_203_43_206_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 204 8 ]
+        symbol [ BehaviorDelegate %tmp.2 204 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 204 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 205 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 205 16 20 ];
+        symbol [ _view ? 205 8 13 ];
+        putv self :_view %tmp.4;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_203_43_206_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 209; @symbol_functiondef = [onSelect,209,13,21]; @symbol_return<0> = [Boolean,209,27,34]; ]
+    function onSelect() as Boolean {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_209_35_218_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 210 8 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_209_35_218_4_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_209_35_218_4_stop" ]
+        %p.1 = local;
+        symbol [ p %p.1 210 12 13 ];
+        symbol [ _view %tmp.2 210 16 21 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ selected %tmp.3 210 22 30 ];
+        %tmp.3 = getv %tmp.2 :selected;
+        lputv %p.1 %tmp.3;
+        symbol [ p %p.1 210 12 13 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 211 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_8_216_8_if_stmt:
+        %tmp.4 = lgetv %p.1;
+        symbol [ p %tmp.4 211 12 13 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_8_216_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_8_216_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 212 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_stop" ]
+        %list.2 = local;
+        symbol [ list %list.2 212 16 20 ];
+        symbol [ $ %tmp.7 212 23 24 ];
+        %tmp.7 = getm $;
+        symbol [ getModel %tmp.8 212 25 33 ];
+        %tmp.8 = getv function %tmp.7 :getModel;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ byDistance %tmp.10 212 36 46 ];
+        %tmp.10 = getv function %tmp.9 :byDistance;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %list.2 %tmp.11;
+        symbol [ list %list.2 212 16 20 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 213 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_stop" ]
+        %idx.3 = local;
+        symbol [ idx %idx.3 213 16 19 ];
+        %tmp.12 = lgetv %list.2;
+        symbol [ list %tmp.12 213 22 26 ];
+        symbol [ indexOf %tmp.13 213 27 34 ];
+        %tmp.13 = getv function %tmp.12 :indexOf;
+        %tmp.14 = lgetv %p.1;
+        symbol [ p %tmp.14 213 35 36 ];
+        %tmp.15 = as %tmp.14 { (!Null) };
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        lputv %idx.3 %tmp.16;
+        symbol [ idx %idx.3 213 16 19 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 214 12 ]
+        [ "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_start" "C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_stop" ]
+        %v.4 = local;
+        symbol [ v %v.4 214 16 17 ];
+        symbol [ DetailView %tmp.20 214 24 34 ];
+        %tmp.20 = getv ? :DetailView;
+        %tmp.21 = lgetv %list.2;
+        symbol [ list %tmp.21 214 35 39 ];
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_begin:
+        %tmp.22 = lgetv %idx.3;
+        symbol [ idx %tmp.22 214 41 44 ];
+        %tmp.23 = 0;
+        %tmp.24 = lt %tmp.22 %tmp.23;
+        bf %tmp.24 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_else_false;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_true:
+        %tmp.25 = 0;
+        push %tmp.25;
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_else_false:
+        %tmp.26 = lgetv %idx.3;
+        symbol [ idx %tmp.26 214 55 58 ];
+        push %tmp.26;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_end:
+        %tmp.27 = phi [%tmp.24 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_begin] [%tmp.25 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_true] [%tmp.26 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_else_false] [%tmp.27 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_214_41_214_55_end];
+        %tmp.17 = newc %tmp.20 (%tmp.21, %tmp.27);
+        lputv %v.4 %tmp.17;
+        symbol [ v %v.4 214 16 17 ];
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 215 12 ]
+        symbol [ WatchUi %tmp.28 215 12 19 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.29 215 20 28 ];
+        %tmp.29 = getv function %tmp.28 :pushView;
+        %tmp.30 = lgetv %v.4;
+        symbol [ v %tmp.30 215 29 30 ];
+        symbol [ DetailDelegate %tmp.34 215 36 50 ];
+        %tmp.34 = getv ? :DetailDelegate;
+        %tmp.35 = lgetv %v.4;
+        symbol [ v %tmp.35 215 51 52 ];
+        %tmp.31 = newc %tmp.34 (%tmp.35);
+        symbol [ WatchUi %tmp.36 215 55 62 ];
+        %tmp.36 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.37 215 63 73 ];
+        %tmp.37 = getv %tmp.36 :SLIDE_LEFT;
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.37);
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_23_216_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_8_216_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_211_8_216_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 217 8 ]
+        %tmp.38 = true;
+        ret %tmp.38;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_209_35_218_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 221; @symbol_functiondef = [onNextPage,221,13,23]; @symbol_return<0> = [Boolean,221,29,36]; ]
+    function onNextPage() as Boolean {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_221_37_224_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 222 8 ]
+        symbol [ _view %tmp.2 222 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ step %tmp.3 222 14 18 ];
+        %tmp.3 = getv function %tmp.2 :step;
+        %tmp.4 = 1;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 223 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_221_37_224_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 226; @symbol_functiondef = [onPreviousPage,226,13,27]; @symbol_return<0> = [Boolean,226,33,40]; ]
+    function onPreviousPage() as Boolean {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_226_41_229_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 227 8 ]
+        symbol [ _view %tmp.2 227 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ step %tmp.3 227 14 18 ];
+        %tmp.3 = getv function %tmp.2 :step;
+        %tmp.4 = -1;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 228 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_226_41_229_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 232; @symbol_functiondef = [onMenu,232,13,19]; @symbol_return<0> = [Boolean,232,25,32]; ]
+    function onMenu() as Boolean {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_232_33_235_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 233 8 ]
+        symbol [ $ %tmp.1 233 8 9 ];
+        %tmp.1 = getm $;
+        symbol [ pushMainMenu %tmp.2 233 10 22 ];
+        %tmp.2 = getv function %tmp.1 :pushMainMenu;
+        invoke %tmp.1 %tmp.2();
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 234 8 ]
+        %tmp.3 = true;
+        ret %tmp.3;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_232_33_235_4_stop:
+    }
+    [ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 238; @symbol_functiondef = [onBack,238,13,19]; @symbol_return<0> = [Boolean,238,25,32]; ]
+    function onBack() as Boolean {
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_238_33_245_4_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 239 8 ]
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_8_243_8_if_stmt:
+        symbol [ _view %tmp.2 239 12 17 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ manual %tmp.3 239 18 24 ];
+        %tmp.3 = getv %tmp.2 :manual;
+        bf %tmp.3 @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_8_243_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_8_243_8_if_true:
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_26_243_8_start:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 240 12 ]
+        symbol [ _view %tmp.4 240 12 17 ];
+        %tmp.4 = getv self :_view;
+        %tmp.5 = false;
+        symbol [ manual ? 240 18 24 ];
+        putv %tmp.4 :manual %tmp.5;
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 241 12 ]
+        symbol [ WatchUi %tmp.6 241 12 19 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.7 241 20 33 ];
+        %tmp.7 = getv function %tmp.6 :requestUpdate;
+        invoke %tmp.6 %tmp.7();
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 242 12 ]
+        %tmp.8 = true;
+        ret %tmp.8;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_26_243_8_stop:
+        goto @C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_8_243_8_if_end;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_239_8_243_8_if_end:
+[ "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc" 244 8 ]
+        %tmp.9 = false;
+        ret %tmp.9;
+C__Users_brice_Documents_Programmation_VisualStudio_Garmin_forerunner_PeakFinder_source_RadarView_mc_238_33_245_4_stop:
+    }
+}
+[ @file = "C:\Users\brice\Documents\Programmation\VisualStudio\Garmin forerunner\PeakFinder\source\RadarView.mc"; @line = 1; ]
+<init> {
+}

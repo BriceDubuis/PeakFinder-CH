@@ -1,0 +1,153 @@
+name;height_m;prominence_m;lat;lon;range;src
+Piz Bernina;4048;2236;46.3822;9.9081;Bernina Range;ISO
+Monte Rosa;4634;2165;45.9369;7.8669;Pennine Alps;ISO
+Finsteraarhorn;4274;2279;46.5375;8.1261;Bernese Alps;ISO
+Chasseral;1606;666;47.1664;7.0594;Jura Mountains;ISO
+Tödi;3614;1570;46.8111;8.9147;Glarus Alps;ISO
+Mont Tendre;1679;451;46.5947;6.3100;Jura Mountains;ISO
+Rheinwaldhorn;3402;1337;46.4936;9.0400;Lepontine Alps;ISO
+Le Chasseron;1607;590;46.8517;6.5386;Jura Mountains;ISO
+Schesaplana;2964;826;47.0539;9.7072;Rätikon;ISO
+Ringelspitz;3248;844;46.8997;9.3442;Glarus Alps;ISO
+Hasenmatt;1445;618;47.2419;7.4506;Jura Mountains;ISO
+Grand Combin;4309;1512;45.9375;7.2992;Pennine Alps;ISO
+Säntis;2502;2021;47.2494;9.3433;Appenzell Alps;ISO
+Piz Linard;3410;1027;46.7989;10.0714;Silvretta Alps;ISO
+Piz Kesch;3418;1503;46.6214;9.8725;Albula Alps;ISO
+Wildhorn;3250;981;46.3547;7.3608;Bernese Alps;ISO
+Dammastock;3630;1466;46.6436;8.4211;Uri Alps;ISO
+Piz Sesvenna;3204;1055;46.7061;10.4031;Sesvenna Range;ISO
+Dents du Midi;3257;1796;46.1611;6.9233;Chablais Alps;ISO
+Cornettes de Bise;2432;1063;46.3325;6.7844;Chablais Alps;ISO
+Pizzo Campo Tencia;3072;754;46.4297;8.7261;Lepontine Alps;ISO
+Pizzo Tambo;3279;1164;46.4969;9.2833;Lepontine Alps;ISO
+Dom;4546;1047;46.0950;7.8600;Pennine Alps;ISO
+Pilatus;2128;585;46.9739;8.2411;Emmental Alps;ISO
+Piz Calderas;3397;1085;46.5364;9.6961;Albula Alps;ISO
+Lägern;866;425;47.4817;8.3947;Jura Mountains;ISO
+Lindenberg;878;358;47.2536;8.2931;Swiss Plateau;ISO
+Seerücken;721;268;47.6489;9.0333;Swiss Plateau;ISO
+Fluchthorn;3396;646;46.8908;10.2275;Silvretta Alps;ISO
+Piz Medel;3210;942;46.6181;8.9111;Lepontine Alps;ISO
+Piz Murtaröl;3180;679;46.5706;10.2875;Ortler Alps;ISO
+Le Soliat;1464;204;46.9286;6.7247;Jura Mountains;ISO
+Irchel;694;260;47.5394;8.6072;Swiss Plateau;ISO
+Gridone;2188;1218;46.1233;8.6481;Lepontine Alps;ISO
+Monte Generoso;1701;1321;45.9314;9.0200;Lugano Prealps;ISO
+Diablerets;3216;974;46.3039;7.1892;Vaud Alps;ISO
+Glärnisch;2915;967;46.9986;8.9986;Schwyz Alps;ISO
+La Dôle;1677;355;46.4250;6.0994;Jura Mountains;ISO
+Matterhorn;4478;1043;45.9764;7.6583;Pennine Alps;ISO
+Bruschghorn;3056;577;46.6311;9.3067;Lepontine Alps;ISO
+Chutzen;820;261;47.0147;7.3239;Swiss Plateau;ISO
+Aroser Rothorn;2980;1349;46.7378;9.6139;Plessur Alps;ISO
+Bietschhorn;3934;807;46.3914;7.8508;Bernese Alps;ISO
+Monte Tamaro;1962;1408;46.1039;8.8661;Lugano Prealps;ISO
+Rigi;1797;1288;47.0567;8.4856;Schwyz Alps;ISO
+Aletschhorn;4194;1043;46.4650;7.9936;Bernese Alps;ISO
+Blinnenhorn;3374;945;46.4258;8.3081;Lepontine Alps;ISO
+Oberalpstock;3328;709;46.7425;8.7694;Glarus Alps;ISO
+Balmhorn;3697;1020;46.4250;7.6936;Bernese Alps;ISO
+Schafberg;2239;735;46.6369;7.3169;Bernese Alps;ISO
+Monte Leone;3553;1144;46.2497;8.1103;Lepontine Alps;ISO
+Piz Platta;3392;1108;46.4869;9.5617;Oberhalbstein Alps;ISO
+Muttler;3293;703;46.9006;10.3786;Samnaun Alps;ISO
+Weissfluh;2843;497;46.8353;9.7944;Plessur Alps;ISO
+Gamsberg;2385;1358;47.1353;9.3744;Appenzell Alps;ISO
+Weisshorn;4505;1234;46.1017;7.7161;Pennine Alps;ISO
+Weissmies;4013;1183;46.1278;8.0119;Pennine Alps;ISO
+Bürglen (Albis);915;375;47.2578;8.5372;Albis;ISO
+Basòdino;3273;960;46.4117;8.4686;Lepontine Alps;ISO
+Mont Racine;1439;319;47.0219;6.8161;Jura Mountains;ISO
+Napf;1408;552;47.0042;7.9400;Emmental Alps;ISO
+Piz Quattervals;3165;471;46.6272;10.0950;Livigno Alps;ISO
+Vanil Noir;2389;1110;46.5286;7.1483;Fribourg Prealps;ISO
+Piz Pisoc;3173;922;46.7444;10.2797;Sesvenna Range;ISO
+Pizzo Paglia;2593;498;46.2319;9.2192;Lepontine Alps;ISO
+Montagne du Château;929;249;46.5808;6.7158;Jorat;ISO
+Mont Vully;653;173;46.9639;7.0939;Swiss Plateau;ISO
+Piz Timun;3209;823;46.4669;9.4094;Oberhalbstein Alps;ISO
+Pizzo Rotondo;3192;752;46.5169;8.4658;Lepontine Alps;ISO
+Diablerets;3210;968;46.3039;7.1889;Vaud Alps;VD
+Oldenhorn;3123;307;46.3292;7.2217;Vaud Alps;VD
+Grand Muveran;3051;1013;46.2372;7.1261;Vaud Alps;VD
+Tête Ronde;3037;108;46.3036;7.1778;Vaud Alps;VD
+Scex Rouge;2971;131;46.3272;7.2025;Vaud Alps;VD
+Dent de Morcles;2969;466;46.1992;7.0756;Vaud Alps;VD
+Dent Favre;2917;316;46.2103;7.1039;Vaud Alps;VD
+Tête à Pierre Grept;2904;165;46.2528;7.1553;Vaud Alps;VD
+Petit Muveran;2810;265;46.2236;7.1225;Vaud Alps;VD
+Fulen;2491;311;46.9186;8.7147;Schwyz Alps;A2K
+Cima di Pinadee;2486;455;46.5133;8.9769;Lepontine Alps;A2K
+Spillgerte;2476;453;46.5367;7.4467;Bernese Alps;A2K
+Pierre Avoi;2473;300;46.1181;7.2003;Pennine Alps;A2K
+Seehorn;2434;567;46.1825;8.1156;Pennine Alps;A2K
+Cornettes de Bise;2432;1061;46.3325;6.7847;Chablais Alps;A2K
+Altmann;2435;313;47.2394;9.3717;Appenzell Alps;A2K
+Gufelstock;2436;423;47.0250;9.1467;Glarus Alps;A2K
+Mürtschenstock;2441;601;47.0700;9.1442;Glarus Alps;A2K
+Gummfluh;2458;574;46.4406;7.1950;Vaud Alps;A2K
+Hohniesen;2454;371;46.5772;7.5833;Bernese Alps;A2K
+Vanil Noir;2389;1120;46.5286;7.1483;Fribourg Prealps;A2K
+Hoh Brisen;2413;489;46.8975;8.4658;Uri Alps;A2K
+Niesen;2362;407;46.6461;7.6525;Bernese Alps;A2K
+Wistätthorn;2362;370;46.4542;7.3864;Bernese Alps;A2K
+Brienzer Rothorn;2350;1342;46.7872;8.0469;Emmental Alps;A2K
+Wittenberghorn;2350;465;46.4161;7.2100;Vaud Alps;A2K
+Pizzo Erra;2417;301;46.4411;8.8908;Lepontine Alps;A2K
+Hohgant;2197;636;46.7881;7.9017;Emmental Alps;A2K
+Chrüz;2196;589;46.9550;9.7750;Rätikon;A2K
+Lüschgrat;2178;332;46.7017;9.3447;Lepontine Alps;A2K
+Vilan;2376;416;47.0128;9.6031;Rätikon;A2K
+Pizzo di Campel;2376;332;46.3319;9.2617;Lepontine Alps;A2K
+Poncione Piancascia;2360;325;46.2986;8.7336;Lepontine Alps;A2K
+Pizzo Cramalina;2322;297;46.2553;8.6239;Lepontine Alps;A2K
+Hinterrugg;2306;470;47.1536;9.3047;Appenzell Alps;A2K
+Rautispitz;2283;465;47.0711;9.0283;Schwyz Alps;A2K
+Druesberg;2282;709;47.0042;8.8336;Schwyz Alps;A2K
+Brisi;2279;325;47.1533;9.2767;Appenzell Alps;A2K
+Mutteristock;2294;744;47.0483;8.9431;Schwyz Alps;A2K
+Wasserbergfirst;2341;325;46.9394;8.7892;Schwyz Alps;A2K
+Elsighorn;2341;296;46.5347;7.6397;Bernese Alps;A2K
+Dent de Savigny;2252;853;46.5497;7.2267;Fribourg Prealps;A2K
+Schafberg;2235;726;46.6369;7.3164;Fribourg Prealps;A2K
+Morgenberghorn;2249;370;46.6222;7.7936;Bernese Alps;A2K
+Stockhorn;2190;399;46.6939;7.5375;Bernese Alps;A2K
+Ochsen;2188;384;46.6989;7.4186;Bernese Alps;A2K
+Tour d'Aï;2331;886;46.3722;7.0019;Vaud Alps;A2K
+Gros Van;2189;528;46.3964;7.0692;Vaud Alps;A2K
+Les Jumelles;2215;365;46.3519;6.8122;Chablais Alps;A2K
+Gridone;2188;1231;46.1236;8.6481;Lepontine Alps;A2K
+Gamsberg;2385;1358;47.1356;9.3761;Appenzell Alps;A2K
+Sosto;2221;524;46.5483;8.9519;Lepontine Alps;A2K
+Marmontana;2316;343;46.1719;9.1703;Lugano Prealps;A2K
+L'Argentine;2422;393;46.2733;7.1308;Vaud Alps;A2K
+Rochers de Naye;2042;582;46.4319;6.9762;Vaud Alps;WP
+Le Suchet;1588;435;46.7724;6.4661;Jura Mountains;WP
+Aiguilles de Baulmes;1559;280;46.7913;6.4722;Jura Mountains;WP
+Dent de Lys;2014;502;46.5076;7.0029;Fribourg Prealps;WP
+Dent de Brenleire;2354;275;46.5508;7.1748;Fribourg Prealps;WP
+Kaiseregg;2185;190;46.6524;7.3191;Fribourg Prealps;WP
+Weissenstein (Röti);1395;213;47.2519;7.5092;Jura Mountains;WP
+Belchenflue;1099;44;47.3628;7.8106;Jura Mountains;WP
+Uetliberg;870;143;47.3494;8.4914;Albis;WP
+Tour de Mayen;2327;185;46.3744;7.0083;Vaud Alps;WP
+Pic Chaussy;2351;113;46.3771;7.1128;Vaud Alps;WP
+Le Chamossaire;2113;380;46.3267;7.0613;Vaud Alps;WP
+Dent de Jaman;1875;130;46.4449;6.9749;Vaud Alps;WP
+Mont Tendre;1679;451;46.5947;6.3100;Jura Mountains;WP
+Le Noirmont;1567;237;46.4842;6.1158;Jura Mountains;WP
+Dent de Folliéran;2340;226;46.5469;7.1683;Fribourg Prealps;WP
+La Berra;1719;307;46.6760;7.1840;Fribourg Prealps;WP
+Moléson;2002;509;46.5488;7.0171;Fribourg Prealps;WP
+Vogelberg (Passwang);1204;301;47.3683;7.6822;Jura Mountains;WP
+Pilatus (Tomlishorn);2128;585;46.9739;8.2411;Emmental Alps;WP
+Dent de Vaulion;1483;339;46.6847;6.3500;Jura Mountains;WP
+Le Chasseron;1607;590;46.8517;6.5385;Jura Mountains;WP
+Schnebelhorn;1292;112;47.3256;8.9796;Appenzell Alps;WP
+Bachtel;1115;358;47.2947;8.8864;Appenzell Alps;WP
+Schrattenflue;2092;776;46.8344;7.9577;Emmental Alps;WP
+Tête de Ran;1422;42;47.0542;6.8533;Jura Mountains;WP
+Ruchen (Jura);1123;392;47.3622;7.8064;Jura Mountains;WP
+Geissflue;963;0;47.4196;7.9570;Jura Mountains;WP
+Le Gibloux;1204;374;46.6842;7.0406;Fribourg Prealps;WP
