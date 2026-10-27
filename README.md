@@ -1,4 +1,4 @@
-# PeakFinder CH — Garmin Forerunner 255 Music
+# PeakWatch CH — Garmin Forerunner 255 Music
 
 Point the watch at a mountain and it tells you which summit it is.
 It covers 784 Swiss summits in 28 massifs and works fully offline.
